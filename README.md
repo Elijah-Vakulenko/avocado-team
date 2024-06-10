@@ -10,6 +10,15 @@ https://docs.google.com/spreadsheets/d/1gZC4OK4aKBAQUPEKCySlDVX2_gRaUpRhE6R3-SKH
 
 **Трелло:**
 
+**Бібліотека Accordeon:** https://michu2k.github.io/Accordion/
+
+**Swiper API:** https://swiperjs.com/swiper-api
+
+**API Portfolio:** https://portfolio-js.b.goit.study/api-docs/
+
+**Приклад рядка, що біжить для секції Tech skills**:
+https://codepen.io/kryvonos_v/pen/zXKYvw
+
 ## Оновіть Node для коректної роботи з терміналом та репозиторієм
 
 Завантажити останню версію: https://nodejs.org/en При встановленні не забудьте
@@ -39,9 +48,8 @@ https://docs.google.com/spreadsheets/d/1gZC4OK4aKBAQUPEKCySlDVX2_gRaUpRhE6R3-SKH
 \<span> без буд'яких класів, колір вже прописаний.
 ![image](https://github.com/Elijah-Vakulenko/JS-Team-Project/assets/154387383/1d25c821-8a9a-4b75-8add-605f14dd864d)
 
-**Заголовки, кнопки, ховер ефекти кнопок вже додані**, так щоб додати ховер
-ефект до вашої кнопки просто додайте назву класу **(visit-btn, load-more-btn,
-form-btn)** до вашої кнопки:
+**Заголовки, кнопки, ховер ефекти кнопок вже додані**, так щоб додати стилі до
+кнопки просто додайте назву класу **(visit-btn, load-more-btn, form-btn)**:
 
 ## Створення гілки
 

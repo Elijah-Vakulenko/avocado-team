@@ -1,4 +1,13 @@
-/* Reset styles */
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -13,23 +22,30 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+  color: currentColor;
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input {
+  outline: none;
+  font-family: inherit;
 }

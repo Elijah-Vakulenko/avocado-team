@@ -9,6 +9,10 @@ https://www.figma.com/file/JJBu6X0fAeZ8CVcwSXSYsD/Portfolio-2.0?type=design&node
 https://docs.google.com/spreadsheets/d/1gZC4OK4aKBAQUPEKCySlDVX2_gRaUpRhE6R3-SKHizI/edit#gid=0
 
 **Трелло:**
+https://trello.com/invite/b/nqOTqUB9/ATTI0ece2dd5eecd6d910c51d6ca279a15a448072C9F/project-group-07js
+
+**Slack**
+https://join.slack.com/t/teamprojectbl-mwd7185/shared_invite/zt-2kk6w12yp-GuH01t1xLbEfplu_BHOvAQ
 
 **Бібліотека Accordeon:** https://michu2k.github.io/Accordion/
 

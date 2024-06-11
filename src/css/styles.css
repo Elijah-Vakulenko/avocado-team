@@ -43,6 +43,11 @@
   margin: 0 auto;
 }
 
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .is-hidden {
   position: absolute;
   width: 1px;
@@ -279,6 +284,11 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
+  section {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
   .container {
     padding: 0 32px;
     max-width: 768px;
@@ -355,6 +365,11 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1280px) {
+  section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
   .container {
     max-width: 1280px;
   }

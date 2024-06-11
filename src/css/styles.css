@@ -56,7 +56,13 @@
   overflow: hidden;
 }
 
-.logo {
+.logo-header {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.logo-footer {
   font-size: 32px;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -102,7 +108,8 @@ h4 {
 h1 span,
 h2 span,
 h4 span,
-.logo span,
+.logo-header span,
+.logo-footer span,
 p span {
   color: #00b068;
 }
@@ -277,7 +284,8 @@ textarea::placeholder {
     max-width: 768px;
   }
 
-  .logo {
+  .logo-header,
+  .logo-footer {
     font-size: 32px;
     line-height: 1;
     letter-spacing: 0.05em;

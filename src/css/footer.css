@@ -1,0 +1,131 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .logo-footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    padding-left: 0;
+    margin: auto;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+  }
+  
+  .social-links li {
+    display: flex;
+    margin: 12px 0;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #292929;
+    font-size: 16px;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+
+  .texto-footer-diferent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /*.texto-footer-1 p {
+    margin-top: 0;
+    font-size: 14px;
+    color: #292929;
+    display: inline;
+  }
+
+  .texto-footer-2 p {
+    margin-top: 0;
+    font-size: 14px;
+    color: #292929;
+    display: inline;
+  }
+*/
+  
+
+
+  /* Перенос тексту на новий рядок для мобільних пристроїв */
+@media screen and (max-width: 767px) {
+    .copyright {
+      white-space: pre-wrap;
+    }
+  }
+  
+  /* Адаптивність для мобільних пристроїв (від 320px, гумова верстка) */
+  @media screen and (min-width: 320px) {
+    .footer {
+      padding: 20px 10px;
+    }
+  }
+  
+  /* Адаптивність для мобільних пристроїв (від 360px) */
+  @media screen and (min-width: 360px) {
+    .footer {
+      padding: 20px 20px;
+    }
+    .logo-footer h2 {
+      font-size: 28px;
+    }
+    .social-links a {
+      font-size: 18px;
+    }
+  }
+  
+  /* Адаптивність для планшетів (від 768px) */
+  @media screen and (min-width: 768px) {
+ 
+    .social-links {
+        display: flex;
+    }
+    
+    .footer-content {
+      max-width: 1000px;
+    }
+    .logo-footer h2 {
+      font-size: 32px;
+    }
+    .social-links a {
+      font-size: 20px;
+    }
+  }
+  
+  /* Адаптивність для десктопів (від 1280px) */
+  @media screen and (min-width: 1280px) {
+    .footer {
+      padding: 40px 40px;
+    }
+    .footer-content {
+      max-width: 1280px;
+    }
+    .logo-footer h2 {
+      font-size: 36px;
+    }
+    .social-links a {
+      font-size: 22px;
+    }
+  }
+  

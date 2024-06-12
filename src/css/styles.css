@@ -7,7 +7,7 @@
 /* @import url('./benefits.css'); */
 /* @import url('./faq.css'); */
 /* @import url('./reviews.css'); */
-/* @import url('./work-together.css'); */
+@import url('./work-together.css');
 /* @import url('./footer.css'); */
 
 /* ====================Font setup========================== */
@@ -27,7 +27,7 @@
   letter-spacing: 0.03em;
 
   color: #292929;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #f0f0f0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -77,7 +77,8 @@ section {
 
 h1,
 h2,
-.logo {
+.logo-header,
+.logo-footer {
   font-weight: 400;
   font-family: 'Impact', sans-serif;
   text-transform: uppercase;
@@ -247,9 +248,9 @@ input {
   background-color: #e4e5e6;
 }
 
-input::placeholder {
+/* input::placeholder {
   color: rgba(41, 41, 41, 0.4);
-}
+} */
 
 textarea {
   display: flex;
@@ -265,9 +266,9 @@ textarea {
   background-color: #e4e5e6;
 }
 
-textarea::placeholder {
+/* textarea::placeholder {
   color: rgba(41, 41, 41, 0.4);
-}
+} */
 /* ================================АДАПТИВ======================================= */
 
 @media screen and (min-width: 360px) {

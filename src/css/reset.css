@@ -45,7 +45,8 @@ img {
   height: auto;
 }
 
-input {
+input,
+textarea {
   outline: none;
   font-family: inherit;
 }

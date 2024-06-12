@@ -5,6 +5,7 @@
 }
 
 .tech-skills {
+  min-width: 320px;
 }
 
 .tech-skills-item-block {
@@ -47,7 +48,6 @@
 }
 
 .tech-skills-item {
-  /* padding: 10px 15px; */
 }
 
 h3 {
@@ -57,10 +57,28 @@ h3 {
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(100);
+    transform: translateX(0);
   }
 
   to {
     transform: translateX(-100%);
   }
+}
+
+.dark-mode-cover {
+  background-color: #214136;
+}
+
+.dark-mode-cover-rotate {
+  background-color: #2a2d32;
+}
+
+.dark-mode-item-block {
+  background-color: #f0f0f0;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-wdth: 1280px) {
 }

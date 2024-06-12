@@ -13,6 +13,7 @@
     height: 374px;
     border-radius: 16px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .profile-container {
@@ -29,6 +30,7 @@
 }
 
 .h3-about-section {
+
         margin-bottom: 40px;
 }
 
@@ -97,22 +99,42 @@ margin-top: 5px;
         margin-top: 124px;
         margin-bottom: 124px;
     }
-}
 
 
 .about-img {
 width: 336px;
     height: 392px;
     border-radius: 16px;
+    margin-top: 368px;
 }
-
- .bg-decoration {
-     background-image: url('../img/decor-bg-4.png');
-     background-size: 336px 260px;
-     background-position: right top;
-     background-repeat: no-repeat;
+.profile-container {
+    display: flex;
+    gap: 32px;
  }
 
+ .profile-container-text {
+
+ }
+ .bg-decor {
+     background-image: url('../img/decor bg 2.png');
+     background-size: 336px 252px;
+        background-position: right bottom;
+     background-repeat: no-repeat;
+ } 
+
+ .education-role-container {
+    margin-top: 60px;
+    gap: 32px;
+    display: flex;
+ }
+
+ .education {
+    width: 50%;
+ }
+
+ .role {
+    width: 50%;
+ }}
 /* descktop */
 
 @media screen and (min-width: 1280px) {
@@ -121,17 +143,34 @@ width: 336px;
         margin-bottom: 164px;
     }
 
+        .profile-container {
+            gap: 136px;
+        }
+
         .about-img {
             width: 384px;
             height: 448px;
             border-radius: 16px;
+            margin-left: 240px;
         }
+        .education-role-container {
+                    margin-left: 240px;
+                }
 
-                 .bg-decoration {
-                     background-image: url('../img/decor-bg-4.png');
-                     background-size: 336px 260px;
-                     background-position: right top;
-                     background-repeat: no-repeat;
-                 }
+        .bg-decor {
+                             background-image: url('../img/decor bg 2.png');
+                             background-size: 336px 260px;
+                             background-position: right bottom;
+                             background-repeat: no-repeat;
+                         } 
         
 }
+
+
+
+
+ 
+
+
+
+  

@@ -1,0 +1,26 @@
+.tech-skills-item-block {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: #292929;
+  margin: 8px;
+}
+
+.block-span {
+  background-color: #00b068;
+}
+
+.tech-skills-list {
+  background-color: #bcdfd1;
+  display: flex;
+  gap: 16px;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-rotate {
+  background-color: #e4e5e6;
+  transform: rotate(2deg);
+  transform-origin: top left;
+}

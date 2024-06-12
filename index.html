@@ -21,7 +21,7 @@
 
     
     <script type="module" crossorigin src="/avocado-team/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/avocado-team/assets/index-61368c12.css">
+    <link rel="stylesheet" href="/avocado-team/assets/index-f566aa09.css">
   </head>
   <body>
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/header.html' -->
@@ -32,40 +32,77 @@
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/benefits.html' -->
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/faq.html' -->
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/reviews.html' -->
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/work-together.html' -->
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/footer.html' -->
-
-    <div class="container">
-      <a class="logo-header" href="/">Logo <span>header</span></a>
-      <a class="logo-footer" href="/">Logo<span>footer</span></a>
-      <h1>Title <span>H1</span></h1>
-      <h2>Title <span>H2</span></h2>
-
-      <h3>Title H3</h3>
-      <h4>Title H4/ list item</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        consequatur officiis quasi commodi soluta maxime quia assumenda, sequi
-        neque magnam voluptas laborum quae quis a ipsa deserunt quibusdam enim
-        explicabo voluptatem culpa autem in nihil vel mollitia! Quo dicta
-        veritatis, optio suscipit in necessitatibus magnam est cumque veniam
-        facilis minus odio hic recusandae? Reiciendis, doloremque.
-      </p>
-
-      <button class="order-btn" type="button">Order the project</button>
-      <button class="visit-btn" type="button">visit</button>
-      <button class="load-more-btn" type="button">Load more</button>
-      <button class="form-btn" type="submit">send message</button>
-
-      <input type="text" placeholder="Your email*" />
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Message"
-      ></textarea>
+    <section class="wt-section">
+  <div class="container bg-decoration">
+    <h2 class="work-together-title">Let’s <span>work together</span></h2>
+    <div class="wt-content">
+      <h4 class="work-together-subtitle">
+        Contact me to transform your ideas into exceptional solutions.
+      </h4>
+      <address>
+        <ul class="contacts">
+          <li class="contact-item">
+            <svg class="contacts-icons" width="24" height="24">
+              <use href="/avocado-team/assets/icons-433205af.svg#phone"></use></svg
+            ><a
+              href="tel:+380904567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              >+38 090 456 78 90</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg class="contacts-icons" width="24" height="24">
+              <use href="/avocado-team/assets/icons-433205af.svg#letter"></use></svg
+            ><a
+              href="mailto:lloydjefferson@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <svg class="contacts-icons" width="24" height="24">
+              <use href="/avocado-team/assets/icons-433205af.svg#location"></use></svg
+            ><a
+              href="https://www.google.com/maps/place/New+York,+NY,+USA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >USA, New York</a
+            >
+          </li>
+        </ul>
+      </address>
+      <form class="form" name="form">
+        <div class="form-input">
+          <input
+            class="email-field"
+            name="email"
+            id="email"
+            type="email"
+            placeholder=""
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <label for="email" class="form-inp-label">Your email*</label>
+        </div>
+        <div class="form-textarea">
+          <textarea
+            class="textarea-field"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder=""
+          ></textarea>
+          <label for="message" class="form-tx-label">Message</label>
+        </div>
+        <button class="form-btn" type="submit">Send message</button>
+      </form>
     </div>
+  </div>
+</section>
+
+    <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/footer.html' -->
 
     
   </body>

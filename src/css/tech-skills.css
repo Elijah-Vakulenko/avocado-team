@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.tech-skills {
+}
+
 .tech-skills-item-block {
   width: 8px;
   height: 8px;
@@ -10,17 +19,48 @@
   background-color: #00b068;
 }
 
-.tech-skills-list {
+.tech-skills-cover {
   background-color: #bcdfd1;
+}
+
+.tech-skills-list {
   display: flex;
   gap: 16px;
   padding: 32px 0;
   justify-content: center;
   align-items: center;
+  animation: marqueeLine 5s linear infinite;
+  overflow: hidden;
 }
 
-.list-rotate {
+.cover-rotate {
   background-color: #e4e5e6;
   transform: rotate(2deg);
   transform-origin: top left;
+}
+
+.list-rotate {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.tech-skills-item {
+  /* padding: 10px 15px; */
+}
+
+h3 {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(100);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

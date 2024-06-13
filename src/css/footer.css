@@ -1,7 +1,10 @@
-.footer {
 
+
+
+.footer {
   text-align: center;
-  border-top: 1px solid;
+  border-top: 1px solid #E4E5E6;
+  padding: 40px 0;
 }
 
 .footer-content {
@@ -92,12 +95,11 @@
   }
 
   .logo-footer h3 {
-    padding: 0;
-    margin-top: 40px;
+    padding-bottom: 32px;
+    
   }
 
   .social-links {
-    margin-top: 32px;
     justify-content: center;
     flex-direction: row;
     gap: 30px;
@@ -116,10 +118,7 @@
 
 /* Адаптивність для десктопів (від 1280px) */
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-left: 0;
-    padding-top: 40px;
-  }
+  
 
   .footer-content {
     max-width: 1280px;

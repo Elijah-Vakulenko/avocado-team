@@ -21,6 +21,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    visibility: hidden;
 }
 
 .ben-list {
@@ -66,6 +67,10 @@
         font-size: 108px;
         line-height: 115%;
         letter-spacing: 0.02em;
+    }
+
+    .ben-icon-decor {
+        visibility: visible;
     }
 
     .title {

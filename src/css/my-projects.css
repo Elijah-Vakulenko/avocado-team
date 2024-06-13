@@ -6,3 +6,139 @@
 
   text-align: center;
 }
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px;
+  margin-bottom: 40px;
+  max-width: 1008px;
+}
+
+.project-thumb {
+  margin-bottom: 12px;
+}
+
+.project-meta .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-tags {
+  margin-bottom: 16px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  /* color: var(--black); */
+}
+
+.project-heading {
+  flex-shrink: 1;
+
+  white-space: wrap;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  /* color: var(--black); */
+}
+
+.project-button {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 12px;
+  padding: 12px 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  /* color: var(--black); */
+  background-color: #e4e5e6;
+  border-radius: 8px;
+}
+
+.load-more-btn {
+  display: block;
+  padding: 7px 0;
+  position: relative;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* color: var(--black); */
+  border: none;
+}
+
+.load-more-btn::after {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #00b068;
+  border-radius: 2px;
+}
+
+/*
+*  MEDIA QUERIES *
+ */
+
+@media screen and (max-width: 767px) {
+  .project-heading {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects-title {
+    margin-bottom: 60px;
+  }
+
+  .project-list {
+    margin-bottom: 60px;
+    gap: 60px;
+  }
+
+  .project-heading {
+    font-size: 36px;
+  }
+
+  .project-tags {
+    margin-bottom: 20px;
+  }
+
+  .load-more-btn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .projects-title {
+    margin-bottom: 80px;
+  }
+
+  .project-list {
+    margin-bottom: 80px;
+    gap: 80px;
+  }
+}

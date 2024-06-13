@@ -37,8 +37,6 @@
 }
 
 .container {
-  outline: 1px solid teal;
-
   max-width: 320px;
   width: 100%;
   padding: 0 20px;
@@ -189,7 +187,7 @@ p span {
   background-color: #bbbbbb;
 }
 
-.load-more-btn {
+/* .load-more-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,7 +207,7 @@ p span {
 
 .load-more-btn:hover {
   color: #00b068;
-}
+} */
 
 .form-btn {
   display: flex;
@@ -345,14 +343,14 @@ textarea {
     width: 261px;
   }
 
-  .load-more-btn {
+  /* .load-more-btn {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     width: 165px;
     height: 56px;
-  }
+  } */
 
   .form-btn {
     width: 173px;

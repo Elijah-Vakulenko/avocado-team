@@ -16,10 +16,6 @@
   margin: 8px;
 }
 
-.block-span {
-  background-color: #00b068;
-}
-
 .tech-skills-cover {
   background-color: #bcdfd1;
 }
@@ -75,6 +71,14 @@ h3 {
 
 .dark-mode-item-block {
   background-color: #f0f0f0;
+}
+
+.dark-mode {
+  color: #f0f0f0;
+}
+
+.block-span {
+  background-color: #00b068;
 }
 
 @media screen and (min-width: 768px) {

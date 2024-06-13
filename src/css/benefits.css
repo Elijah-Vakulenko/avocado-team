@@ -42,6 +42,13 @@
     width: 48px;
     height: 48px;
     background: rgba(0, 176, 104, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ben-icon {
+    color: #00b068;
 }
 
 .title {
@@ -137,6 +144,4 @@
         grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
-
-
 }

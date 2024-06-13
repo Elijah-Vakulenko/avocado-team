@@ -1,6 +1,8 @@
 const runningLine = document.querySelector('.tech-skills-cover');
 const runningLineRotate = document.querySelector('.cover-rotate');
-const clockInRunningLine = document.querySelector('.tech-skills-item-block');
+const clockInRunningLine = document.querySelectorAll('.tech-skills-item-block');
+
+console.log(clockInRunningLine);
 
 const showDarkMode = () => {
   runningLine.classList.add('dark-mode-cover');

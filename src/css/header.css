@@ -1,0 +1,130 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.open-menu-btn {
+    padding: 0;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
+    /* border: none; */
+}
+
+.mob-menu {
+    width: 100vw;
+    /* height: 100vh; */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 20px 20px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mob-menu-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    background-image: url("../img/header-bg1x.png");
+    background-size: 320px 704px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+/* .bg-image-top {
+    background-image: url('../img/headtop-bg.png');
+    background-size: 352px 264px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.bg-image-bottom {
+    background-image: url('../img/headbottom-bg.png');
+    background-size: 170px 131px;
+    background-position: right top;
+    background-repeat: no-repeat;
+} */
+
+.logo-close-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #292929;
+    scroll-behavior: smooth;
+}
+
+.mob-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 296px;
+
+}
+
+@media screen and (min-width: 360px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        display: block;
+    }
+
+    .open-menu-btn {
+        display: none;
+    }
+
+    .header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-right: 0px;
+    }
+    
+    .mob-menu {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    
+}

@@ -1,131 +1,148 @@
 .footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #e7e7e7;
+
+  text-align: center;
+  border-top: 1px solid;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo-social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-footer h3 { 
+  font-weight: bold;
+  padding: 20px 0;
+  margin: auto 0;
+}
+
+.social-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.social-links li {
+  margin: 0;
+}
+
+.social-links a {
+  color: #292929;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+  color: #00B068;
+  transform: scale(1.1);
+}
+
+.texto-footer-diferent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Перенос тексту на новий рядок для мобільних пристроїв */
+@media screen and (max-width: 767px) {
+  .copyright {
+    white-space: pre-wrap;
   }
+}
+
+/* Адаптивність для мобільних пристроїв (від 320px) */
+@media screen and (min-width: 320px) {
   
-  .footer-content {
-    display: flex;
+  .logo-social {
     flex-direction: column;
     align-items: flex-start;
-    max-width: 800px;
-    margin: 0 auto;
   }
-  
-  .logo-footer h2 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px;
-    padding-left: 0;
-    margin: auto;
-  }
-  
-  .social-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 24px;
-  }
-  
-  .social-links li {
-    display: flex;
-    margin: 12px 0;
-  }
+}
+
+/* Адаптивність для мобільних пристроїв (від 360px) */
+@media screen and (min-width: 360px) {
+
   
   .social-links a {
-    text-decoration: none;
-    color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
-  
-  .social-links a:hover {
-    text-decoration: underline;
+}
+
+/* Адаптивність для планшетів (від 768px) */
+@media screen and (min-width: 768px) {
+  .footer-content {
+    max-width: 1000px;
+    padding: 0;
+  }
+
+  .logo-footer h3 {
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .social-links {
+    margin-top: 32px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
   }
 
   .texto-footer-diferent {
-    display: flex;
+    margin-top: 40px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .texto-footer-2 {
+    margin-left: 5px;
+  }
+}
+
+/* Адаптивність для десктопів (від 1280px) */
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  .footer-content {
+    max-width: 1280px;
+    padding-left: 0;
+  }
+
+  .logo-social {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  /*.texto-footer-1 p {
-    margin-top: 0;
-    font-size: 14px;
-    color: #292929;
-    display: inline;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .texto-footer-2 p {
-    margin-top: 0;
-    font-size: 14px;
-    color: #292929;
-    display: inline;
+  .logo-footer h3 {
+    margin: 0;
   }
-*/
-  
 
+  .social-links {
+    gap: 40px;
+  }
 
-  /* Перенос тексту на новий рядок для мобільних пристроїв */
-@media screen and (max-width: 767px) {
-    .copyright {
-      white-space: pre-wrap;
-    }
+  .texto-footer-diferent {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 44px;
   }
-  
-  /* Адаптивність для мобільних пристроїв (від 320px, гумова верстка) */
-  @media screen and (min-width: 320px) {
-    .footer {
-      padding: 20px 10px;
-    }
-  }
-  
-  /* Адаптивність для мобільних пристроїв (від 360px) */
-  @media screen and (min-width: 360px) {
-    .footer {
-      padding: 20px 20px;
-    }
-    .logo-footer h2 {
-      font-size: 28px;
-    }
-    .social-links a {
-      font-size: 18px;
-    }
-  }
-  
-  /* Адаптивність для планшетів (від 768px) */
-  @media screen and (min-width: 768px) {
- 
-    .social-links {
-        display: flex;
-    }
-    
-    .footer-content {
-      max-width: 1000px;
-    }
-    .logo-footer h2 {
-      font-size: 32px;
-    }
-    .social-links a {
-      font-size: 20px;
-    }
-  }
-  
-  /* Адаптивність для десктопів (від 1280px) */
-  @media screen and (min-width: 1280px) {
-    .footer {
-      padding: 40px 40px;
-    }
-    .footer-content {
-      max-width: 1280px;
-    }
-    .logo-footer h2 {
-      font-size: 36px;
-    }
-    .social-links a {
-      font-size: 22px;
-    }
-  }
-  
+}

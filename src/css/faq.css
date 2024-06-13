@@ -12,7 +12,6 @@
 }
 
 .faq-list-item {
-    width: 320px;
     border-radius: 16px;
     background: rgba(0, 176, 104, 0.20);
     padding: 28px 24px;
@@ -30,7 +29,7 @@
 }
 
 .faq-item-title {
-    max-width: 224px;
+    width: 224px;
 }
 
 .faq-icon-up,
@@ -43,24 +42,30 @@
     margin-top: 24px;
 }
 
+@media screen and (min-width: 360px) {
+
+}
+
 @media screen and (min-width: 768px) {
-    .faq-list-item {
-        width: 704px;
+
+.faq-list-item {
+    width: 704px;
 }
 
 .faq-item-title {
-    max-width: 600px;
+    width: 600px;
 }
 
 }
 
 @media screen and (min-width: 1280px) {
-    .faq-list-item {
-        width: 592px;
+
+.faq-list-item {
+    width: 592px;
 }
 
 .faq-item-title {
-    max-width: 488px;
+    width: 488px;
 }
 
 .faq-general-block {

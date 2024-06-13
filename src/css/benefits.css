@@ -37,9 +37,6 @@
     background: rgba(0, 176, 104, 0.1);
 }
 
-.ben-icon {
-}
-
 .title {
     font-family: "Poppins",
         sans-serif;
@@ -50,4 +47,28 @@
     text-transform: uppercase;
     color: #292929;
 }
+/*-------------------------*/
 
+@media screen and (min-width: 768px) {
+    .ben-title {
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 160%;
+    }
+
+    .ben-list {
+        margin: -22px;
+        gap: 32px 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media screen and (min-width: 1158px) {
+
+}

@@ -168,6 +168,10 @@ p span {
   background-color: rgba(0, 176, 104, 0.6);
 }
 
+.fill-icon {
+  fill: #00b068;
+}
+
 .visit-btn {
   display: flex;
   align-items: center;

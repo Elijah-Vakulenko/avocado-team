@@ -5,7 +5,7 @@ new Accordion('.faq-list', {
     duration: 400,
     showMultiple: false,
     elementClass: 'faq-list-item',
-    triggerClass: 'faq-item-title',
+    triggerClass: 'faq-title-arrow',
     panelClass: 'faq-item-text',
     activeClass: 'faq-list-item-active',
     openOnInit: [0]

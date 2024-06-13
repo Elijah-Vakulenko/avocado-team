@@ -21,7 +21,7 @@
 
     
     <script type="module" crossorigin src="/avocado-team/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/avocado-team/assets/index-a413205a.css">
+    <link rel="stylesheet" href="/avocado-team/assets/index-d72187dd.css">
   </head>
   <body>
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/header.html' -->
@@ -220,8 +220,8 @@
 </div>
 </section>
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/reviews.html' -->
-    <section class="wt-section">
-  <div class="container bg-decoration">
+    <section>
+  <div class="container background">
     <h2 class="work-together-title">Let’s <span>work together</span></h2>
     <div class="wt-content">
       <h4 class="work-together-subtitle">
@@ -270,8 +270,13 @@
             type="email"
             placeholder=""
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
           />
           <label for="email" class="form-inp-label">Your email*</label>
+          <svg class="valid-icon" width="16" height="16">
+            <use href="/avocado-team/assets/icons-8e30ca9b.svg#success-filled"></use>
+          </svg>
+          <div class="invalid-message">Invalid email, try again</div>
         </div>
         <div class="form-textarea">
           <textarea

@@ -1,10 +1,10 @@
 @import url('./reset.css');
-@import url('./header.css'); 
+@import url('./header.css');
 @import url('./hero.css');
 /* @import url('./about-me.css'); */
 @import url('./tech-skills.css');
 /* @import url('./my-projects.css'); */
-@import url('./benefits.css'); 
+@import url('./benefits.css');
 @import url('./faq.css');
 /* @import url('./reviews.css'); */
 @import url('./work-together.css');
@@ -66,6 +66,12 @@ section {
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.06em;
+  transition: transform 0.3s ease;
+}
+
+.logo-header:hover,
+.logo-footer:hover {
+  transform: scale(1.02);
 }
 
 .logo-footer {
@@ -73,6 +79,7 @@ section {
   font-size: 32px;
   line-height: 1;
   letter-spacing: 0.05em;
+  transition: transform 0.3s ease;
 }
 
 h1,

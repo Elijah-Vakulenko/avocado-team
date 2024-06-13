@@ -67,6 +67,7 @@ input:-webkit-autofill {
 
 /* ↓ позиціонуємо іконку на інпут та приховуємо її */
 .valid-icon {
+  fill: #00b068;
   display: none;
   position: absolute;
   right: 10px;

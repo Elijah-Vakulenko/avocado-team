@@ -1,0 +1,147 @@
+
+
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #E4E5E6;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo-social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-footer h3 { 
+  font-weight: bold;
+  padding: 20px 0;
+  margin: auto 0;
+}
+
+.social-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.social-links li {
+  margin: 0;
+}
+
+.social-links a {
+  color: #292929;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+  color: #00B068;
+  transform: scale(1.1);
+}
+
+.texto-footer-diferent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Перенос тексту на новий рядок для мобільних пристроїв */
+@media screen and (max-width: 767px) {
+  .copyright {
+    white-space: pre-wrap;
+  }
+}
+
+/* Адаптивність для мобільних пристроїв (від 320px) */
+@media screen and (min-width: 320px) {
+  
+  .logo-social {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Адаптивність для мобільних пристроїв (від 360px) */
+@media screen and (min-width: 360px) {
+
+  
+  .social-links a {
+    font-size: 18px;
+  }
+}
+
+/* Адаптивність для планшетів (від 768px) */
+@media screen and (min-width: 768px) {
+  .footer-content {
+    max-width: 1000px;
+    padding: 0;
+  }
+
+  .logo-footer h3 {
+    padding-bottom: 32px;
+    
+  }
+
+  .social-links {
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .texto-footer-diferent {
+    margin-top: 40px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .texto-footer-2 {
+    margin-left: 5px;
+  }
+}
+
+/* Адаптивність для десктопів (від 1280px) */
+@media screen and (min-width: 1280px) {
+  
+
+  .footer-content {
+    max-width: 1280px;
+    padding-left: 0;
+  }
+
+  .logo-social {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-footer h3 {
+    margin: 0;
+  }
+
+  .social-links {
+    gap: 40px;
+  }
+
+  .texto-footer-diferent {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 44px;
+  }
+}

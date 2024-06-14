@@ -18,7 +18,18 @@
 }
 
 .project-thumb {
+  height: 184px;
   margin-bottom: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-meta .row {
@@ -31,10 +42,7 @@
   margin-bottom: 16px;
 
   font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.03em;
-  /* color: var(--black); */
 }
 
 .project-heading {
@@ -46,8 +54,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-
-  /* color: var(--black); */
 }
 
 .project-button {
@@ -60,14 +66,14 @@
   padding: 12px 24px;
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
 
-  /* color: var(--black); */
   background-color: #e4e5e6;
   border-radius: 8px;
 }
+
+/* 
+* LOAD MORE BTN
+ */
 
 .load-more-btn {
   display: block;
@@ -78,10 +84,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  /* color: var(--black); */
   border: none;
 }
 
@@ -99,6 +103,32 @@
   border-radius: 2px;
 }
 
+.load-more-btn.is-hidden {
+  display: none;
+}
+
+.load-more-btn > .spinner.is-hidden {
+  display: none;
+}
+
+.load-more-btn > .spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #00b068;
+  border-radius: 50%;
+  border-top-color: #00b068;
+
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*
 *  MEDIA QUERIES *
  */
@@ -112,6 +142,11 @@
 @media screen and (min-width: 768px) {
   .projects-title {
     margin-bottom: 60px;
+  }
+
+  .project-thumb {
+    height: 404px;
+    border-radius: 24px;
   }
 
   .project-list {
@@ -135,6 +170,11 @@
 @media screen and (min-width: 1280px) {
   .projects-title {
     margin-bottom: 80px;
+  }
+
+  .project-thumb {
+    height: 578px;
+    border-radius: 24px;
   }
 
   .project-list {

@@ -1,140 +1,138 @@
 .benefits {
-    font-family: "Poppins",
-        sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: #292929;;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #292929;
 }
 
 .ben-title {
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 123%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    font-family: "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Impact', sans-serif;
 }
 
 .ben-list {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .ben-item {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.ben-box-icon {
-    border-radius: 8px;
-    width: 48px;
-    height: 48px;
-    background: rgba(0, 176, 104, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .ben-icon {
-    fill: #00b068;
+  fill: none;
+  stroke: #00b068;
+  stroke-width:2px;
+}
+
+.ben-box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 176, 104, 0.1);
 }
 
 .title {
-    font-family: "Poppins",
-        sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
 }
-
 
 /*-------------------------*/
 
 @media screen and (min-width: 768px) {
-    .ben-title {
-        font-size: 108px;
-        line-height: 115%;
-        letter-spacing: 0.02em;
-    }
+  .ben-title {
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
 
-    .ben-icon-decor {
-        visibility: visible;
-    }
+  .ben-icon-decor {
+    visibility: visible;
+  }
 
-    .title {
-        font-size: 20px;
-        line-height: 160%;
-    }
+  .title {
+    font-size: 20px;
+    line-height: 160%;
+  }
 
-    .ben-list {
-        margin: -22px auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .ben-list {
+    margin: -22px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .expertise {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-    }
+  .expertise {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 
-    .communication {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    
-    .art {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
+  .communication {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 
-    .execution {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
+  .art {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 
+  .execution {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }
 
 @media screen and (min-width: 1158px) {
-    .ben-title {
-        max-width: 681px;
-    }
+  .ben-title {
+    max-width: 681px;
+  }
 
-    .ben-list {
-        margin: -96px auto;
-        max-width: 1216px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
+  .ben-list {
+    margin: -96px auto;
+    max-width: 1216px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-    .ben-item {
-        max-width: 384px;
-    }
+  .ben-item {
+    max-width: 384px;
+  }
 
-    .expertise {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
-    }
+  .expertise {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
 
-    .communication {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    
-    .art {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
+  .communication {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 
-    .execution {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-    }
+  .art {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .execution {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
 }

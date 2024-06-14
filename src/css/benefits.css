@@ -17,13 +17,6 @@
     font-family: "Impact", sans-serif;
 }
 
-.ben-icon-decor {
-    position: absolute;
-    top: 0;
-    right: 0;
-    visibility: hidden;
-}
-
 .ben-list {
     margin-top: 40px;
     display: flex;

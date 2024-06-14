@@ -37,9 +37,9 @@
 }
 
 .ben-icon {
-  fill: transparent;
+  fill: none;
   stroke: #00b068;
-stroke-width:2;
+stroke-width:2px;
 }
 
 .ben-box-icon {

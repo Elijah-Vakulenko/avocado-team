@@ -117,8 +117,11 @@ width: 336px;
  }
  .bg-decor {
      background-image: url('../img/decor bg 2.png');
-     background-size: 336px 252px;
-        background-position: right bottom;
+     width: 336px;
+     height: 252px;
+    position: absolute;
+        top: 1100px;
+        left: 368px;
      background-repeat: no-repeat;
  } 
 
@@ -159,8 +162,12 @@ width: 336px;
 
         .bg-decor {
                              background-image: url('../img/decor bg 2.png');
-                             background-size: 336px 260px;
-                             background-position: right bottom;
+                             /* background-size: 336px 260px; */
+                             width: 336px;
+                             height: 260px;
+                            position: absolute;
+                            top: 1100px;
+                            left: 845px;
                              background-repeat: no-repeat;
                          } 
         

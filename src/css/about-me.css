@@ -1,0 +1,183 @@
+.section-about {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.span-color {
+    color:  #00B068;
+}
+
+.about-img {
+    width: 320px;
+    height: 374px;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-container {
+    margin-top: 40px;
+}
+
+.profile-container-paragraph {
+    color: var(--Black, #292929);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.50;
+        letter-spacing: 0.03em;
+        padding-bottom: 24px;
+}
+
+.h3-about-section {
+
+        margin-bottom: 40px;
+}
+
+.education-role-container {}
+
+.education {}
+
+.educalion-list {
+    padding-bottom: 40px;
+}
+
+.education-list-item {
+    color: var(--Black, #292929);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.50;
+        letter-spacing: 0.03em;
+        padding-bottom: 12px;
+        display: flex;
+            gap: 18px;
+}
+
+
+.role {}
+
+.role-list {}
+
+.role-list-item {
+    color: var(--Black, #292929);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.50;
+        letter-spacing: 0.03em;
+        padding-bottom: 12px;
+        display: flex;
+        gap: 18px;
+}
+.education-list-item::before {
+content: '';
+width: 4px;
+height: 4px;
+background-color: #00B068;
+  
+border-radius: 100%;
+border: 1px solid #00B068;
+display: block;
+flex-shrink: 0;
+margin-top: 5px;
+}
+
+.role-list-item::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #00B068;
+    border-radius: 100%;
+    border: 1px solid #00B068;
+    display: block;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+/* tablet */
+
+@media screen and (min-width: 768px) {
+.section-about {
+        margin-top: 124px;
+        margin-bottom: 124px;
+    }
+
+
+.about-img {
+width: 336px;
+    height: 392px;
+    border-radius: 16px;
+    margin-top: 368px;
+}
+.profile-container {
+    display: flex;
+    gap: 32px;
+ }
+
+ .profile-container-text {
+
+ }
+ .bg-decor {
+     background-image: url('../img/decor bg 2.png');
+     width: 336px;
+     height: 252px;
+    position: absolute;
+        top: 1100px;
+        left: 368px;
+     background-repeat: no-repeat;
+ } 
+
+ .education-role-container {
+    margin-top: 60px;
+    gap: 32px;
+    display: flex;
+ }
+
+ .education {
+    width: 50%;
+ }
+
+ .role {
+    width: 50%;
+ }}
+/* descktop */
+
+@media screen and (min-width: 1280px) {
+.section-about {
+        margin-top: 164px;
+        margin-bottom: 164px;
+    }
+
+        .profile-container {
+            gap: 136px;
+        }
+
+        .about-img {
+            width: 384px;
+            height: 448px;
+            border-radius: 16px;
+            margin-left: 240px;
+        }
+        .education-role-container {
+                    margin-left: 240px;
+                }
+
+        .bg-decor {
+                             background-image: url('../img/decor bg 2.png');
+                             /* background-size: 336px 260px; */
+                             width: 336px;
+                             height: 260px;
+                            position: absolute;
+                            top: 1100px;
+                            left: 845px;
+                             background-repeat: no-repeat;
+                         } 
+        
+}
+
+
+
+
+ 
+
+
+
+  

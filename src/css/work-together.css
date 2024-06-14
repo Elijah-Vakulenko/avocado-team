@@ -1,8 +1,12 @@
+.wt-section {
+  padding-top: 80px;
+}
+
 .work-together-subtitle {
   margin-top: 40px;
   margin-bottom: 32px;
 }
-
+/* ==========================Contact list============================== */
 .contacts {
   display: flex;
   flex-direction: column;
@@ -18,12 +22,19 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-item:hover {
+  color: #00b068;
 }
 
 .contacts-icons {
   stroke: #00b068;
   fill: transparent;
 }
+
+/* ================================FORM===================================== */
 
 .form {
   display: flex;
@@ -48,8 +59,62 @@
   color: rgba(41, 41, 41, 0.4);
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #e4e5e6 inset !important;
+  border: 1px solid none !important;
+}
+
 .form .form-input:focus-within .form-inp-label {
   transform: translateY(calc(-50% - 33px));
+  color: #00b068;
+}
+
+/* ↓ позиціонуємо іконку на інпут та приховуємо її */
+.valid-icon {
+  fill: #00b068;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ↓ якщо значення пошти відповідає паттерну, відкриваємо приховану іконку */
+.email-field:valid ~ .valid-icon {
+  display: block;
+}
+
+/* ↓ створюємо попередження, якщо пошта не проходить валідацію та ховаємо його за замовченням */
+.invalid-message {
+  display: none;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+  margin-top: 5px;
+  position: absolute;
+  right: 16px;
+  top: 100%;
+}
+
+/* ↓ якщо не валідна поштова адреса: */
+.email-field:required:invalid:not(:placeholder-shown) ~ .invalid-message {
+  display: block;
+}
+/* ↓ змінюємо текст введеної пошти, якщо не валідна */
+.email-field:invalid {
+  color: #e74a3b;
+}
+
+.email-field:not(:placeholder-shown) + .form-inp-label {
+  transform: translateY(calc(-50% - 36px)) scale(0.95);
+  color: #00b068;
+}
+
+/* ↓ якщо щось вже введено в поле, тоді лейбл фіксується вгорі */
+.textarea-field:not(:placeholder-shown) + .form-tx-label {
+  transform: translateY(calc(-100% - 8px));
   color: #00b068;
 }
 
@@ -69,6 +134,7 @@
 
 .textarea-field {
   padding-top: 20px;
+  resize: none;
 }
 
 .form-btn {
@@ -79,23 +145,26 @@
   transform: scale(1.02);
 }
 
-/* =================================ADAPTATION============================================== */
+/* =================================ADAPTATIVE Design============================================== */
 
 @media screen and (min-width: 360px) {
 }
 
 @media screen and (min-width: 768px) {
   .wt-section {
-  }
-
-  .bg-decoration {
-    background-image: url('../img/decor-bg-4.png');
-    background-size: 336px 260px;
-    background-position: right top;
+    padding-top: 124px;
+    background-image: url('../img/bg-4-1x-min.png');
+    background-position: 98% 7%;
     background-repeat: no-repeat;
+    background-size: 336px 260px;
   }
 
-  .work-together-title {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution 2dppx) {
+    .wt-section {
+      background-image: url(../img/bg-4-2x-min.png);
+    }
   }
 
   .work-together-subtitle {
@@ -110,6 +179,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .wt-section {
+    padding-top: 164px;
+    background-image: url('../img/bg-4-1x-min.png');
+    background-position: 88% 9%;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+  }
+
   .work-together-title {
     width: 513px;
     height: 248px;
@@ -119,10 +196,6 @@
     margin-top: 0;
     margin-bottom: 120px;
     grid-area: subtitle;
-  }
-
-  .bg-decoration {
-    background-size: 526px 408px;
   }
 
   .wt-content {

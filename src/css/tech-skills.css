@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.tech-skills {
+  min-width: 320px;
+}
+
+.tech-skills-item-block {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: #292929;
+  margin: 8px;
+}
+
+.tech-skills-cover {
+  background-color: #bcdfd1;
+}
+
+.tech-skills-list {
+  display: flex;
+  gap: 16px;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+  animation: marqueeLine 5s linear infinite;
+  overflow: hidden;
+}
+
+.cover-rotate {
+  background-color: #e4e5e6;
+  transform: rotate(2deg);
+  transform-origin: top left;
+}
+
+.list-rotate {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.tech-skills-item {
+}
+
+h3 {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.dark-mode-cover {
+  background-color: #214136;
+}
+
+.dark-mode-cover-rotate {
+  background-color: #2a2d32;
+}
+
+.dark-mode-item-block {
+  background-color: #f0f0f0;
+}
+
+.dark-mode {
+  color: #f0f0f0;
+}
+
+.block-span {
+  background-color: #00b068;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-wdth: 1280px) {
+}

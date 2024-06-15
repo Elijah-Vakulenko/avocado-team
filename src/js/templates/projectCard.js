@@ -11,6 +11,9 @@ export default function projectCardTemplate({ images, tags, name, url }) {
             alt="${name}"
             class="project-image"
           />
+          <span class="image-loading js-image-loading">
+            <span class="loader"></span>
+          </span>
         </div>
         <div class="project-meta">
           <p class="project-tags">${tags}</p>

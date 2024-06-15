@@ -10,7 +10,6 @@ export default class LoadMoreBtn {
 
     refs.button = document.querySelector(selector);
     refs.label = refs.button.querySelector('.label');
-    refs.spinner = refs.button.querySelector('.spinner');
 
     return refs;
   }
@@ -26,12 +25,12 @@ export default class LoadMoreBtn {
   disable() {
     this.refs.button.disabled = true;
     this.refs.label.textContent = 'Loading...';
-    this.refs.spinner.classList.remove('is-hidden');
+    this.refs.button.classList.add('loading');
   }
 
   enable() {
     this.refs.button.disabled = false;
     this.refs.label.textContent = 'Load more';
-    this.refs.spinner.classList.add('is-hidden');
+    this.refs.button.classList.remove('loading');
   }
 }

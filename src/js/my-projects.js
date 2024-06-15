@@ -22,10 +22,24 @@ projectsAPI
     return projects;
   })
   .then(projects => {
-    loadMoreBtn.show();
-
     const markup = projects.map(projectCardTemplate).join('');
     refs.projectsList.insertAdjacentHTML('beforeend', markup);
+  })
+  .finally(() => {
+    loadMoreBtn.show();
+
+    const projectImages = document.querySelectorAll('.project-image');
+
+    projectImages.forEach(image => {
+      image.addEventListener('load', onImageLoaded, { once: true });
+    });
+
+    function onImageLoaded(evt) {
+      const thumb = evt.target.closest('.project-thumb');
+      const loading = thumb.querySelector('.js-image-loading');
+
+      loading.classList.add('hidden');
+    }
   });
 
 refs.loadMoreBtn.addEventListener('click', onLoadMore);
@@ -48,12 +62,35 @@ function onLoadMore() {
         return;
       }
     })
-    .then(projects => {
+    .then(() => {
       projectsAPI.incrementPage();
-      return projects;
+      smoothScroll();
     })
     .catch(error => console.log(error))
     .finally(() => {
       loadMoreBtn.enable();
+
+      const projectImages = document.querySelectorAll('.project-image');
+
+      projectImages.forEach(image => {
+        image.addEventListener('load', onImageLoaded, { once: true });
+      });
+
+      function onImageLoaded(evt) {
+        const thumb = evt.target.closest('.project-thumb');
+        const loading = thumb.querySelector('.js-image-loading');
+
+        loading.classList.add('hidden');
+      }
     });
+}
+
+function smoothScroll() {
+  const card = document.querySelector('.js-project-list .project-item');
+  const cardHeight = card.getBoundingClientRect().height;
+  window.scrollBy({
+    left: 0,
+    top: cardHeight,
+    behavior: 'smooth',
+  });
 }

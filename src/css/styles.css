@@ -37,8 +37,6 @@
 }
 
 .container {
-  outline: 1px solid teal;
-
   max-width: 320px;
   width: 100%;
   padding: 0 20px;

@@ -1,5 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+
+<symbol id="icon-arrow-up-right" viewBox="0 0 32 32">
+<path fill="none" stroke="#00b068" style="stroke: var(--color1, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M3.111 28.889l25.778-25.778M28.889 3.111h-24M28.889 3.111v24"></path>
+
 <symbol id="icon-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M20 12H4.00001" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M10 18L4 12L10 6" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -56,6 +60,7 @@
 <symbol id="icon-location" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M20 14c0 2.209-1.791 4-4 4s-4-1.791-4-4v0c0-2.209 1.791-4 4-4s4 1.791 4 4v0 0z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M26 14c0 9.467-10 15.067-10 15.067s-10-5.6-10-15.067c0-5.523 4.477-10 10-10s10 4.477 10 10v0 0z"></path>
+
 </symbol>
 </defs>
 </svg>

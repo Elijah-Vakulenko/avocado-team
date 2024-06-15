@@ -5,8 +5,6 @@ export default class ProjectsAPI {
     this.page = 1;
     this.perPage = 3;
     this.lastPage = Math.floor(projectsData.length / this.perPage);
-
-    console.log(projectsData);
   }
 
   fetchProjects() {
@@ -23,11 +21,6 @@ export default class ProjectsAPI {
         }, 500);
       });
     }
-
-    console.log('this.page', this.page);
-    console.log('this.lastPage', this.lastPage);
-    console.log(this.page * this.perPage - this.perPage);
-    console.log(this.page * this.perPage);
 
     return new Promise((resolve, reject) => {
       // * Імітація відповіді від сервера (з затримкою)

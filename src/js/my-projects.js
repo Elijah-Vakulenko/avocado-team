@@ -10,7 +10,6 @@ const refs = getRefs();
 const projectsAPI = new ProjectsAPI();
 const loadMoreBtn = new LoadMoreBtn({
   selector: '[data-action="load-more"]',
-  hidden: true,
 });
 
 projectsAPI.resetPage();
@@ -22,24 +21,10 @@ projectsAPI
     return projects;
   })
   .then(projects => {
-    const markup = projects.map(projectCardTemplate).join('');
-    refs.projectsList.insertAdjacentHTML('beforeend', markup);
+    renderProjects(projects);
   })
   .finally(() => {
-    loadMoreBtn.show();
-
-    const projectImages = document.querySelectorAll('.project-image');
-
-    projectImages.forEach(image => {
-      image.addEventListener('load', onImageLoaded, { once: true });
-    });
-
-    function onImageLoaded(evt) {
-      const thumb = evt.target.closest('.project-thumb');
-      const loading = thumb.querySelector('.js-image-loading');
-
-      loading.classList.add('hidden');
-    }
+    setupImageLoad();
   });
 
 refs.loadMoreBtn.addEventListener('click', onLoadMore);
@@ -50,8 +35,7 @@ function onLoadMore() {
   projectsAPI
     .fetchProjects()
     .then(projects => {
-      const markup = projects.map(projectCardTemplate).join('');
-      refs.projectsList.insertAdjacentHTML('beforeend', markup);
+      renderProjects(projects);
 
       if (projectsAPI.page === projectsAPI.lastPage) {
         iziToast.info({
@@ -70,18 +54,7 @@ function onLoadMore() {
     .finally(() => {
       loadMoreBtn.enable();
 
-      const projectImages = document.querySelectorAll('.project-image');
-
-      projectImages.forEach(image => {
-        image.addEventListener('load', onImageLoaded, { once: true });
-      });
-
-      function onImageLoaded(evt) {
-        const thumb = evt.target.closest('.project-thumb');
-        const loading = thumb.querySelector('.js-image-loading');
-
-        loading.classList.add('hidden');
-      }
+      setupImageLoad();
     });
 }
 
@@ -93,4 +66,23 @@ function smoothScroll() {
     top: cardHeight,
     behavior: 'smooth',
   });
+}
+
+function renderProjects(projects) {
+  const markup = projects.map(projectCardTemplate).join('');
+  refs.projectsList.insertAdjacentHTML('beforeend', markup);
+}
+
+function setupImageLoad() {
+  const projectImages = document.querySelectorAll('.project-image');
+
+  projectImages.forEach(image => {
+    image.addEventListener('load', onImageLoaded, { once: true });
+  });
+}
+
+function onImageLoaded(evt) {
+  const loading = evt.target.nextElementSibling;
+
+  loading.classList.add('hidden');
 }

@@ -4,19 +4,10 @@
     background-image: url('../img/hero-bg1x.png');
     background-size: 100%;
     background-position: right 14px top 20px;
-    padding: 16px 0 40px 0;
+    padding-top: 112px;
     background-repeat: no-repeat;
 }
 
-.container.hero-decor {
-    margin-top: 96px;
-}
-
-
-.container.hero-decor h1 {
-    /* margin-top: 96px; */
-    margin-bottom: 40px;
-}
 
 .container.hero-decor p {
     margin-bottom: 72px;
@@ -91,11 +82,8 @@
         background-size: 704px 896px;
         /* background-position: right 14px top 30px; */
         background-repeat: no-repeat;
+ padding-top: 88px;
     }
-
-.container.hero-decor {
-    margin-top: 72px;
-}
 
     .container.hero-decor p {
         color: var(--Black, #292929);

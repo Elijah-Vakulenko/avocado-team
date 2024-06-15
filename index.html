@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/avocado-team/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/avocado-team/assets/vendor-8f98089f.js">
     <link rel="stylesheet" href="/avocado-team/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/avocado-team/assets/index-24eb502f.css">
+    <link rel="stylesheet" href="/avocado-team/assets/index-a8d77dd1.css">
   </head>
   <body>
     <header class="header">
@@ -65,8 +65,8 @@
     <div class="desc-img">
       <h1>Hello, I am <span>Fullstack developer</span></h1>
       <picture class="image-hero">
-        <source src="../img/hero-img1x.jpg 1x, ../img/hero-img2x.jpg 2x" />
-        <img src="../img/hero-img1x.jpg" alt="Hero photo" />
+        <source src="./img/hero-img1x.jpg 1x, ./img/hero-img2x.jpg 2x" />
+        <img src="/avocado-team/assets/hero-img1x-7e1ec251.jpg" alt="Hero photo" />
       </picture>
     </div>
     <div class="btn-p">
@@ -328,8 +328,8 @@
 </section>
 
     <!-- ENOENT: no such file or directory, open '/home/runner/work/avocado-team/avocado-team/src/partials/my-projects.html' -->
-    <section class="benefits">
-  <div class="benefits-cont container">
+    <section>
+  <div class="container">
     <h2 class="ben-title"><span>Benefits</span> of working with me</h2>
     <ul class="ben-list">
       <li class="ben-item expertise">
@@ -338,7 +338,7 @@
             <use href="/avocado-team/assets/icons-3ace8d70.svg#icon-user-01"></use>
           </svg>
         </div>
-        <h3 class="title">Expertise</h3>
+        <h4>Expertise</h4>
         <p>
           With extensive experience in development, I have a deep understanding
           of programming and website development.
@@ -351,7 +351,7 @@
             <use href="/avocado-team/assets/icons-3ace8d70.svg#icon-message-02"></use>
           </svg>
         </div>
-        <h3 class="title">Communication</h3>
+        <h4>Communication</h4>
         <p>
           Understanding your needs and wants is my priority and I am always
           available for discussions and open to corrections.
@@ -364,7 +364,7 @@
             <use href="/avocado-team/assets/icons-3ace8d70.svg#icon-brush-03"></use>
           </svg>
         </div>
-        <h3 class="title">Art</h3>
+        <h4>Art</h4>
         <p>
           Thanks to my creative nature, I am ready to accept challenges and help
           you bring your ideas to life.
@@ -377,7 +377,7 @@
             <use href="/avocado-team/assets/icons-3ace8d70.svg#icon-hourglass-04"></use>
           </svg>
         </div>
-        <h3 class="title">Urgent execution</h3>
+        <h4>Urgent execution</h4>
         <p>
           I understand how important time is to you. Ready to work quickly and
           efficiently, without reducing the quality of work.
@@ -472,41 +472,37 @@
 </section>
     <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Section Reviews</title>
     
-</head>
-<body>
-    <section class="reviews">
-        <h1 class="title">Reviews</h1>
-        <div class="reviews-container">
-            <ul class="swiper-wrapper" id="reviews">
-              </ul>
-            </div>
-          
-            <div class="swiper-pagination"></div>
-            <div class="swiper-navigation">
-              <button class="swiper-button-prev" disabled>
-                <svg width="24" height="24">
-                    <use href="/avocado-team/assets/symbol-defs-8c1b6e9e.svg#icon-arrow-narrow-right"></use>
-                </svg>
-              </button>
-              <button class="swiper-button-next" disabled>
-                <svg width="24" height="24">
-                    <use href="/avocado-team/assets/symbol-defs-8c1b6e9e.svg#icon-arrow-narrow-left"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="reviews-error-message">Not found</div>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h2 class="review-title">Reviews</h2>
+        <div class="reviews-container swiper-container">
+          <ul class="swiper-wrapper" id="reviews"></ul>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-navigation">
+          <button class="swiper-button-prev disabled">
+            <svg width="24" height="24">
+              <use href="/avocado-team/assets/symbol-defs-8c1b6e9e.svg#icon-arrow-narrow-right"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next disabled">
+            <svg width="24" height="24">
+              <use href="/avocado-team/assets/symbol-defs-8c1b6e9e.svg#icon-arrow-narrow-left"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="reviews-error-message" style="display: none">Not found</div>
+      </div>
     </section>
-    <script src="./js/reviews.js"></script>
-</body>
+  </body>
 </html>
-
-
 
     <section class="wt-section" id="contacts">
   <div class="container">

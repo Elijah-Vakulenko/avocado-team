@@ -6,6 +6,29 @@
 
 .tech-skills {
   min-width: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-skills-cover,
+.cover-rotate {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.tech-skills-list {
+  display: flex;
+  gap: 16px;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+  animation: marqueeLeft 10s linear infinite;
+}
+
+.cover-rotate .tech-skills-list {
+  animation: marqueeRight 10s linear infinite;
 }
 
 .tech-skills-item-block {
@@ -20,45 +43,46 @@
   background-color: #bcdfd1;
 }
 
-.tech-skills-list {
-  display: flex;
-  gap: 16px;
-  padding: 32px 0;
-  justify-content: center;
-  align-items: center;
-  animation: marqueeLine 5s linear infinite;
-  overflow: hidden;
-}
-
 .cover-rotate {
   background-color: #e4e5e6;
   transform: rotate(2deg);
   transform-origin: top left;
 }
 
-.list-rotate {
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+.tech-skills-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
 }
 
-.tech-skills-item {
+.tech-skills-item:last-child {
+  margin-right: 8px;
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 h3 {
   white-space: nowrap;
   flex-shrink: 0;
-}
-
-@keyframes marqueeLine {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
 }
 
 .dark-mode-cover {
@@ -79,10 +103,4 @@ h3 {
 
 .block-span {
   background-color: #00b068;
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-wdth: 1280px) {
 }

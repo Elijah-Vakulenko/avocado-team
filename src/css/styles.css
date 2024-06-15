@@ -1,12 +1,12 @@
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
-/* @import url('./about-me.css'); */
+@import url('./about-me.css');
 @import url('./tech-skills.css');
 @import url('./my-projects.css');
-/* @import url('./benefits.css'); */
+@import url('./benefits.css'); 
 @import url('./faq.css');
-/* @import url('./reviews.css'); */
+@import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./footer.css');
 
@@ -41,6 +41,7 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+  outline: red;
 }
 
 section {
@@ -66,6 +67,12 @@ section {
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.06em;
+  transition: transform 0.3s ease;
+}
+
+.logo-header:hover,
+.logo-footer:hover {
+  transform: scale(1.02);
 }
 
 .logo-footer {
@@ -73,6 +80,7 @@ section {
   font-size: 32px;
   line-height: 1;
   letter-spacing: 0.05em;
+  transition: transform 0.3s ease;
 }
 
 h1,
@@ -129,7 +137,7 @@ p span {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   font-weight: 400;
   font-size: 18px;
@@ -159,6 +167,11 @@ p span {
 
 .order-btn:hover::before {
   background-color: rgba(0, 176, 104, 0.6);
+}
+
+.fill-icon {
+  fill: #00b068;
+  margin-right: 12px;
 }
 
 .visit-btn {
@@ -274,7 +287,7 @@ textarea {
 
 @media screen and (min-width: 360px) {
   .container {
-    max-width: 375px;
+    max-width: 360px;
   }
 
   .form-btn,
@@ -292,6 +305,10 @@ textarea {
   section {
     padding-top: 62px;
     padding-bottom: 62px;
+  }
+
+  section:nth-last-of-type(2) {
+    padding-bottom: 0px;
   }
 
   .container {
@@ -377,5 +394,10 @@ textarea {
 
   .container {
     max-width: 1280px;
+  }
+
+  input,
+  textarea {
+    width: 592px;
   }
 }

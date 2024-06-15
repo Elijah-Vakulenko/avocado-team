@@ -1,3 +1,7 @@
+.wt-section {
+  padding-top: 80px;
+}
+
 .work-together-subtitle {
   margin-top: 40px;
   margin-bottom: 32px;
@@ -67,6 +71,7 @@ input:-webkit-autofill {
 
 /* ↓ позиціонуємо іконку на інпут та приховуємо її */
 .valid-icon {
+  fill: #00b068;
   display: none;
   position: absolute;
   right: 10px;
@@ -146,10 +151,20 @@ input:-webkit-autofill {
 }
 
 @media screen and (min-width: 768px) {
-  .background {
-    background-image: url('../img/decor-bg-4.png');
-    background-position: 368px -104px;
+  .wt-section {
+    padding-top: 124px;
+    background-image: url('./img/bg-4-1x-min.png');
+    background-position: 98% 7%;
     background-repeat: no-repeat;
+    background-size: 336px 260px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wt-section {
+      background-image: url('./img/bg-4-2x-min.png');
+    }
   }
 
   .work-together-subtitle {
@@ -164,6 +179,14 @@ input:-webkit-autofill {
 }
 
 @media screen and (min-width: 1280px) {
+  .wt-section {
+    padding-top: 164px;
+    background-image: url('../img/bg-4-1x-min.png');
+    background-position: 88% 9%;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+  }
+
   .work-together-title {
     width: 513px;
     height: 248px;
@@ -173,10 +196,6 @@ input:-webkit-autofill {
     margin-top: 0;
     margin-bottom: 120px;
     grid-area: subtitle;
-  }
-
-  .background {
-    background-position: 690px -144px;
   }
 
   .wt-content {

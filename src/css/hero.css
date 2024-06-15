@@ -1,9 +1,17 @@
 .hero-section {
-  /* background-image: url('../img/hero-bg1x.png');
+  background-image: url('../img/hero-bg1x.png');
   background-size: 100%;
-  background-position: right 14px top 20px; */
+  background-position: right 14px top 20px;
   padding-top: 112px;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: url('../img/hero-bg2x.png');
+    }
 }
 
 .container.hero-decor h1 {
@@ -79,12 +87,20 @@
   }
 
   .hero-section {
-    /* background-image: url('../img/decor-bg-5.png');
-    background-size: 704px 896px;
-    background-position: right 14px top 30px;
-    background-repeat: no-repeat; */
+    background-image: url('../img/decor-bg-hero-t1x.png'), url('../img/decor-bg-hero-t1x.png');
+    background-size: 356px 276px;
+    background-position: right 32px top 14px, top 435px left 156px ;
+    background-repeat: no-repeat, no-repeat;
     padding-top: 88px;
   }
+
+   @media screen and (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       .hero-section {
+           background-image: url('../img/decor-bg-hero-t2x.png'), url('../img/decor-bg-hero-t2x.png');
+       }
+   }
 
   .container.hero-decor p {
     color: var(--Black, #292929);
@@ -100,6 +116,7 @@
 
   .container.hero-decor h1 {
     margin-bottom: 60px;
+    font-size: 124px;
   }
 
   .social-list {
@@ -135,12 +152,36 @@
     margin-bottom: 0;
   }
 
-  /* .hero-section {
-    background-image: url('../img/decor-bg-5.png');
-    background-size: 704px 896px;
-    background-position: right 14px top 30px;
-    background-repeat: no-repeat;
-  } */
+  .hero-section {
+      padding-top: 88px;
+      background-image: url('../img/decor-bg-hero-d1x.png');
+      background-position: top right 32px;
+      background-repeat: no-repeat;
+      background-size: 356px 276px;
+  }
+
+  .hero-section::before {
+      content: '';
+      position: absolute;
+      bottom: -48px;
+      left: 236px;
+      width: 356px;      
+      height: 276px;      
+      background-image: url('../img/decor-bg-hero-t1x.png');
+      background-size: cover;
+    
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .hero-section {
+          background-image: url('../img/decor-bg-hero-d2x.png');
+      }
+      .hero-section::before {
+        background-image: url('../img/decor-bg-hero-t2x.png');
+      }
+  }
 
   .desc-img {
     display: flex;

@@ -50,13 +50,16 @@
 }
 
 .tech-skills-cover::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 50%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, rgba(188, 223, 209, 0), #bcdfd1);
+}
+
+.tech-skills-item:last-child {
+  margin-right: 8px;
 }
 
 @keyframes marqueeLeft {
@@ -101,4 +104,3 @@ h3 {
 .block-span {
   background-color: #00b068;
 }
-

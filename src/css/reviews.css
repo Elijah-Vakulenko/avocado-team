@@ -13,22 +13,51 @@ ul.swiper-wrapper {
   margin: 0;
 }
 
-.swiper-container {
+.reviews-container {
   display: flex;
   gap: 24px;
+  width: 100%;
+  margin: 0 auto;
 }
+
 
 .swiper-slide {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-direction: column;
   gap: 24px;
   border-radius: 16px;
   padding: 32px;
-  width: 320px;
+  min-width: 320px;
   height: 296px;
+  width: 100%;
 }
+
+.review-content {
+  font-weight: 300;
+font-size: 16px;
+line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.review-author {
+  display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 16px;
+}
+
+.review-name {
+  font-weight: 600;
+font-size: 16px; 
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: #292929;
+}
+
 
 .swiper-navigation {
   display: flex;
@@ -51,8 +80,7 @@ ul.swiper-wrapper {
   height: 40px;
 }
 
-.swiper-button-prev.disabled,
-.swiper-button-next.disabled {
+.swiper-button-disabled {
   opacity: 0.5;
   cursor: default;
 }
@@ -66,6 +94,7 @@ ul.swiper-wrapper {
 
 .review-title {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .review-avatar {
@@ -77,4 +106,18 @@ ul.swiper-wrapper {
 .review-item {
   width: 100%;
   background-color: #e4e5e6;
+}
+
+@media screen and (min-width: 786px) {
+  .swiper-slide {
+    height: 224px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-container {
+    height: 400px;
+ }
+  
 }

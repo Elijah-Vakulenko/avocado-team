@@ -105,6 +105,11 @@ ul.swiper-wrapper {
   background-color: #e4e5e6;
 }
 
+.review-icon {
+  fill: #292929;
+  stroke: none;
+}
+
 @media screen and (min-width: 786px) {
   .swiper-slide {
     width: 100%;

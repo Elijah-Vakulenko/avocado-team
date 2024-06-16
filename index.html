@@ -21,12 +21,11 @@
 
     
     <script type="module" crossorigin src="/avocado-team/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/avocado-team/assets/vendor-9c945ef3.js">
-    <link rel="stylesheet" href="/avocado-team/assets/vendor-493db78f.css">
-    <link rel="stylesheet" href="/avocado-team/assets/index-fb708afb.css">
+    <link rel="modulepreload" crossorigin href="/avocado-team/assets/vendor-73b1d584.js">
+    <link rel="stylesheet" href="/avocado-team/assets/vendor-f53b51ae.css">
+    <link rel="stylesheet" href="/avocado-team/assets/index-e1002529.css">
   </head>
   <body>
-    
     <header class="header">
     <div class="container header-container">
         <nav class="header-nav">
@@ -61,13 +60,14 @@
         </nav>
     </div>
 </header>
-    <section class="hero-section">
-  <div class="container hero-decor">
+    <main>
+      <section class="hero-section">
+  <div class="container">
     <div class="desc-img">
       <h1>Hello, I am <span>Fullstack developer</span></h1>
-      <picture class="image-hero">
-        <source srcset="/avocado-team/assets/hero-img1x-7e1ec251.jpg 1x, /avocado-team/assets/hero-img2x-46cd0c6c.jpg 2x" />
-        <img src="/avocado-team/assets/hero-img1x-7e1ec251.jpg" alt="Hero photo" />
+      <picture>
+        <source srcset="/avocado-team/assets/hero-1x-min-081da553.png 1x, /avocado-team/assets/hero-2x-min-5e386273.png 2x" />
+        <img class="image-hero" src="/avocado-team/assets/hero-1x-min-081da553.png" alt="Hero photo" />
       </picture>
     </div>
     <div class="btn-p">
@@ -77,40 +77,37 @@
         </svg>
         Order the project
       </button>
-      <p>
+      <h4>
         I work with people all over the world to create
         <span>impressive</span> and <span>functional websites</span> that
         reflect each client's unique personality.
-      </p>
+      </h4>
     </div>
-    <ul class="social-list">
-      <li>
-        <a href="https://www.instagram.com/goitclub" target="_blank"
-          >Instagram</a
-        >
-      </li>
-      <li>
-        <a href="https://www.facebook.com/goit" target="_blank">Facebook</a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-          target="_blank"
-          >LinkedIn</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/Elijah-Vakulenko/avocado-team"
-          target="_blank"
-          >GitHub</a
-        >
-      </li>
-    </ul>
   </div>
+
+  <ul class="social-list">
+    <li>
+      <a href="https://www.instagram.com/goitclub" target="_blank">Instagram</a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/goit" target="_blank">Facebook</a>
+    </li>
+    <li>
+      <a
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        >LinkedIn</a
+      >
+    </li>
+    <li>
+      <a href="https://github.com/Elijah-Vakulenko/avocado-team" target="_blank"
+        >GitHub</a
+      >
+    </li>
+  </ul>
 </section>
 
-    <section class="section-about" id="about">
+      <section class="section-about" id="about">
   <div class="container">
     <h2>About <span>me</span></h2>
     <div class="profile-container">
@@ -165,7 +162,7 @@
   </div>
 </section>
 
-    <section class="tech-skills">
+      <section class="tech-skills">
   <h2 class="is-hidden">Tech Skills</h2>
   <div class="tech-skills-cover">
     <ul class="tech-skills-list">
@@ -322,7 +319,7 @@
   </div>
 </section>
 
-    <section class="projects">
+      <section class="projects">
   <div class="container">
     <h2 class="projects-title">my <span>projects</span></h2>
     <ul class="project-list js-project-list"></ul>
@@ -333,7 +330,7 @@
   </div>
 </section>
 
-    <section>
+      <section class="benefits">
   <div class="container">
     <h2 class="ben-title"><span>Benefits</span> of working with me</h2>
     <ul class="ben-list">
@@ -392,7 +389,7 @@
   </div>
 </section>
 
-    <section class="faq">
+      <section class="faq">
     <div class="container faq-general-block">
 <div class="faq-first-block faq-decor">
 <h2 class="faq-title">frequently asked <span>question</span></h2>
@@ -475,41 +472,30 @@
 </div>
 </div>
 </section>
-    <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Section Reviews</title>
-    
-  </head>
-  <body>
-    <section>
-      <div class="container">
-        <h2 class="review-title">Reviews</h2>
-        <div class="reviews-container">
-          <ul class="swiper-wrapper" id="reviews"></ul>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-navigation">
-          <button class="swiper-button-prev">
-            <svg width="24" height="24">
-              <use href="/avocado-team/assets/symbol-defs-f1712446.svg#icon-arrow-narrow-right"></use>
-            </svg>
-          </button>
-          <button class="swiper-button-next">
-            <svg width="24" height="24">
-              <use href="/avocado-team/assets/symbol-defs-f1712446.svg#icon-arrow-narrow-left"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="reviews-error-message" style="display: none">Not found</div>
-      </div>
-    </section>
-  </body>
-</html>
+      <section class="reviews">
+  <div class="container">
+    <h2 class="review-title">Reviews</h2>
+    <div class="reviews-container">
+      <ul class="swiper-wrapper" id="reviews"></ul>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-navigation">
+      <button class="swiper-button-prev">
+        <svg width="24" height="24">
+          <use href="/avocado-team/assets/symbol-defs-f1712446.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+      <button class="swiper-button-next">
+        <svg width="24" height="24">
+          <use href="/avocado-team/assets/symbol-defs-f1712446.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="reviews-error-message" style="display: none">Not found</div>
+  </div>
+</section>
 
-    <section class="wt-section" id="contacts">
+      <section class="wt-section" id="contacts">
   <div class="container">
     <h2 class="work-together-title">Let’s <span>work together</span></h2>
     <div class="wt-content">
@@ -584,6 +570,7 @@
   </div>
 </section>
 
+    </main>
     <footer class="footer">
     <div class="footer-content container">
       <div class="logo-social">
@@ -606,7 +593,6 @@
   
   
   
-
     
   </body>
 </html>

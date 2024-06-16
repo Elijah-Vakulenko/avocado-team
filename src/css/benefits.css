@@ -62,6 +62,21 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .benefits .container {
+    background-image: url('../img/benef-desk-1x-min.png');
+    background-size: 526px 408px;
+    background-position: 718px -152px;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .benefits .container {
+      background-image: url('../img/benef-desk-2x-min.png');
+    }
+  }
+
   .ben-title {
     max-width: 686px;
   }

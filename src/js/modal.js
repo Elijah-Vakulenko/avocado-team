@@ -26,6 +26,7 @@ const isFormValid = () => {
     for (let element of form.elements) {
         if (element.type !== 'submit') {
             if (element.value.trim() === '') {
+                alert('Please fill all the fields');
                 valid = false;
                 break;
             }
@@ -36,7 +37,7 @@ const isFormValid = () => {
     }
 
     if (valid && emailField && !emailPattern.test(emailField.value.trim())) {
-        alert('Please enter correct e-mail');
+        alert('Please enter a correct email');
         return false;
     }
 
@@ -47,7 +48,6 @@ submitBtn.addEventListener('click', async (event) => {
     event.preventDefault();
 
     if (!isFormValid()) {
-        alert('Please fill all the fields');
         return;
     }
 
@@ -63,11 +63,13 @@ submitBtn.addEventListener('click', async (event) => {
             body: JSON.stringify(data)
         });
 
-
         const result = await response.json();
 
         form.reset();
-        showModal(result.title, result.message);
+        showModal(
+            'Thank you for your interest in cooperation!',
+            'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.'
+        );
     } catch (error) {
         alert(`There was an error submitting the form: ${error.message}. Please check your data and try again.`);
     }

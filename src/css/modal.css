@@ -87,4 +87,5 @@
 .btn-close{
     stroke: #2b2b2b;
     fill: transparent;
+    cursor: pointer;
 }

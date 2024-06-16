@@ -5,5 +5,6 @@ export default function () {
     backToTopButton: document.querySelector(
       'button[data-action="back-to-top"]'
     ),
+    header: document.querySelector('.js-header'),
   };
 }

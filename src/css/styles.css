@@ -4,7 +4,7 @@
 @import url('./about-me.css');
 @import url('./tech-skills.css');
 @import url('./my-projects.css');
-@import url('./benefits.css'); 
+@import url('./benefits.css');
 @import url('./faq.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
@@ -34,6 +34,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -41,12 +42,11 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  outline: red;
+  outline: 1px solid red;
 }
 
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .is-hidden {
@@ -262,10 +262,6 @@ input {
   background-color: #e4e5e6;
 }
 
-/* input::placeholder {
-  color: rgba(41, 41, 41, 0.4);
-} */
-
 textarea {
   display: flex;
   align-items: center;
@@ -280,9 +276,6 @@ textarea {
   background-color: #e4e5e6;
 }
 
-/* textarea::placeholder {
-  color: rgba(41, 41, 41, 0.4);
-} */
 /* ================================АДАПТИВ======================================= */
 
 @media screen and (min-width: 360px) {
@@ -303,8 +296,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   section {
-    padding-top: 62px;
-    padding-bottom: 62px;
+    padding-bottom: 124px;
   }
 
   section:nth-last-of-type(2) {
@@ -388,12 +380,15 @@ textarea {
 
 @media screen and (min-width: 1280px) {
   section {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 164px;
   }
 
   .container {
     max-width: 1280px;
+  }
+
+  h1 {
+    font-size: 124px;
   }
 
   input,

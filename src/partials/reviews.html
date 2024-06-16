@@ -10,23 +10,25 @@
     <section>
       <div class="container">
         <h2 class="review-title">Reviews</h2>
-        <div class="reviews-container">
+
+        <div class="swiper">
           <ul class="swiper-wrapper" id="reviews"></ul>
+          <div class="swiper-navigation">
+            <button class="swiper-button-prev">
+              <svg width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-arrow-narrow-right"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next">
+              <svg width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-arrow-narrow-left"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews-error-message" style="display: none">
+            Not found
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-navigation">
-          <button class="swiper-button-prev">
-            <svg width="24" height="24">
-              <use href="./img/symbol-defs.svg#icon-arrow-narrow-right"></use>
-            </svg>
-          </button>
-          <button class="swiper-button-next">
-            <svg width="24" height="24">
-              <use href="./img/symbol-defs.svg#icon-arrow-narrow-left"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="reviews-error-message" style="display: none">Not found</div>
       </div>
     </section>
   </body>

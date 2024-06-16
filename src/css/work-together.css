@@ -4,7 +4,7 @@
 }
 
 .wt-section .container {
-  padding-top: 164px;
+  padding-top: 0;
 }
 /* ==========================Contact list============================== */
 .contacts {
@@ -149,8 +149,9 @@ input:-webkit-autofill {
 
 @media screen and (min-width: 768px) {
   .wt-section .container {
+    padding-top: 124px;
     background-image: url('../img/wt-tab-1x-min.png');
-    background-position: 400px 60px;
+    background-position: 408px 20px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
   }
@@ -180,6 +181,7 @@ input:-webkit-autofill {
     background-position: 722px 55px;
     background-repeat: no-repeat;
     background-size: 526px 408px;
+    padding-top: 164px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),

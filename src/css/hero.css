@@ -201,4 +201,23 @@
     height: 444px;
     border-radius: 32px;
   }
+
+  .social-list {
+    gap: 40px;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .social-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    /* Встановлюємо ширину на 1280 пікселів */
+    height: 100%;
+    background-color: #e4e5e6;
+    z-index: -1;
+  }
 }

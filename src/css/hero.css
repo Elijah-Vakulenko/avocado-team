@@ -18,10 +18,26 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .btn-p .order-btn::before {
-    width: 165px;
-  }
+@media screen and (min-width: 320px) and (max-width: 359px) {
+.btn-p .order-btn::before {
+        width: 165px;
+    }
+
+    .btn-p .order-btn:hover::before {
+        transform: translateX(-58px) scaleX(1.16);
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width: 767px) {
+    .btn-p .order-btn::before {
+        width: 165px;
+    }
+
+    .btn-p .order-btn:hover::before {
+        transform: translateX(-99px) scaleX(1.16);
+        border-radius: 10px;
+    }
 }
 
 .desc-img h1 {
@@ -98,8 +114,14 @@
         url('../img/hero-tab-down-2x-min.png');
     }
   }
-
+  .btn-p .order-btn:hover::before {
+      background-color: rgba(0, 176, 104, 0.6);
+      transform: translateX(-137px) scaleX(0.82);
+      border-radius: 10px;
+  }
+  
   .btn-p .description {
+
     margin-bottom: 80px;
   }
 
@@ -122,6 +144,12 @@
     margin-bottom: 0;
     margin-left: 72px;
   }
+
+.btn-p .order-btn:hover::before {
+    background-color: rgba(0, 176, 104, 0.6);
+    transform: translateX(-137px) scaleX(0.82);
+    border-radius: 10px;
+}
 
   .btn-p {
     display: flex;

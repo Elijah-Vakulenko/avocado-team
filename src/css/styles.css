@@ -9,6 +9,7 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 /* ====================Font setup========================== */
 
@@ -42,7 +43,7 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 section {
@@ -159,14 +160,16 @@ p span {
   z-index: -1;
   border: none;
   border-radius: 16px;
-  width: 165px;
+  width: 200px;
   height: 100%;
   background-color: rgba(0, 176, 104, 0.2);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-btn:hover::before {
   background-color: rgba(0, 176, 104, 0.6);
+  transform: translateX(-40px);
 }
 
 .fill-icon {
@@ -350,6 +353,10 @@ textarea {
   .order-btn::before {
     border-radius: 16px;
     width: 261px;
+  }
+
+  .order-btn:hover::before {
+    transform: translateX(-155px);
   }
 
   /* .load-more-btn {

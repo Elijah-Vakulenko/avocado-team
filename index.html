@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/avocado-team/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/avocado-team/assets/vendor-9c945ef3.js">
     <link rel="stylesheet" href="/avocado-team/assets/vendor-493db78f.css">
-    <link rel="stylesheet" href="/avocado-team/assets/index-b0934c82.css">
+    <link rel="stylesheet" href="/avocado-team/assets/index-215656b4.css">
   </head>
   <body>
     <header class="header">
@@ -473,28 +473,41 @@
 </div>
 </div>
 </section>
-      <section class="reviews">
-  <div class="container">
-    <h2 class="review-title">Reviews</h2>
-    <div class="reviews-container">
-      <ul class="swiper-wrapper" id="reviews"></ul>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-navigation">
-      <button class="swiper-button-prev">
-        <svg class="review-icon" width="24" height="24">
-          <use href="/avocado-team/assets/symbol-defs-f6a43fc8.svg#icon-arrow-narrow-right"></use>
-        </svg>
-      </button>
-      <button class="swiper-button-next">
-        <svg class="review-icon" width="24" height="24">
-          <use href="/avocado-team/assets/symbol-defs-f6a43fc8.svg#icon-arrow-narrow-left"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="reviews-error-message" style="display: none">Not found</div>
-  </div>
-</section>
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section Reviews</title>
+    
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h2 class="review-title">Reviews</h2>
+
+        <div class="swiper">
+          <ul class="swiper-wrapper" id="reviews"></ul>
+          <div class="swiper-navigation">
+            <button class="swiper-button-prev">
+              <svg width="24" height="24">
+                <use href="/avocado-team/assets/symbol-defs-f6a43fc8.svg#icon-arrow-narrow-right"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next">
+              <svg width="24" height="24">
+                <use href="/avocado-team/assets/symbol-defs-f6a43fc8.svg#icon-arrow-narrow-left"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reviews-error-message" style="display: none">
+            Not found
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
 
       <section class="wt-section" id="contacts">
   <div class="container">

@@ -1,10 +1,7 @@
-
-
-
 .footer {
   text-align: center;
-  border-top: 1px solid #E4E5E6;
-  padding: 40px 0;
+  border-top: 1px solid #e4e5e6;
+  padding: 40px 0 24px 0;
 }
 
 .footer-content {
@@ -23,15 +20,9 @@
   justify-content: space-between;
 }
 
-.logo-footer h3 { 
-  font-weight: bold;
-  padding: 20px 0;
-  margin: auto 0;
-}
-
 .social-links {
   padding: 0;
-  margin: 0;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -50,7 +41,7 @@
 
 .social-links a:hover {
   text-decoration: underline;
-  color: #00B068;
+  color: #00b068;
   transform: scale(1.1);
 }
 
@@ -71,7 +62,6 @@
 
 /* Адаптивність для мобільних пристроїв (від 320px) */
 @media screen and (min-width: 320px) {
-  
   .logo-social {
     flex-direction: column;
     align-items: flex-start;
@@ -80,8 +70,6 @@
 
 /* Адаптивність для мобільних пристроїв (від 360px) */
 @media screen and (min-width: 360px) {
-
-  
   .social-links a {
     font-size: 18px;
   }
@@ -96,7 +84,6 @@
 
   .logo-footer h3 {
     padding-bottom: 32px;
-    
   }
 
   .social-links {
@@ -118,8 +105,6 @@
 
 /* Адаптивність для десктопів (від 1280px) */
 @media screen and (min-width: 1280px) {
-  
-
   .footer-content {
     max-width: 1280px;
     padding-left: 0;

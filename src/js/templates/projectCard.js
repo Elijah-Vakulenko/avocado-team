@@ -1,4 +1,4 @@
-import spriteUrl from '../../img/symbol-defs.svg';
+import spriteUrl from '../../img/my-projects-sprite.svg';
 
 export default function projectCardTemplate({ images, tags, name, url }) {
   return `

@@ -4,21 +4,20 @@
 
 .hero-section .container {
   padding-top: 112px;
-  background-image: url('../img/hero-mob-up-1x-min.png'),
-    url('../img/hero-mob-down-1x-min.png');
-  background-repeat: no-repeat, no-repeat;
-  background-size: 320px 265px, 170px 130px;
-  background-position: 23px 26px, 163px 495px;
+  background-image: url('../img/header-bg1x.png');
+  background-repeat: no-repeat;
+  background-size: 320px 704px;
+  background-position: 24px 14px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-section .container {
-    background-image: url('../img/hero-mob-up-2x-min.png'),
-      url('../img/hero-mob-down-2x-min.png');
+    background-image: url('../img/header-bg2x.png');
   }
 }
+
 
 .desc-img h1 {
   margin-bottom: 40px;
@@ -116,6 +115,7 @@
 @media screen and (min-width: 1280px) {
   .btn-p .order-btn {
     margin-bottom: 0;
+    margin-left: 72px;
   }
 
   .btn-p {
@@ -138,7 +138,7 @@
     background-image: url('../img/hero-desk-up-1x-min.png'),
       url('../img/hero-desk-down-1x-min.png');
     background-size: 356px 276px, 356px 276px;
-    background-position: 892px 18px, 204px 468px;
+    background-position: 892px 18px, 239px 470px;
     background-repeat: no-repeat;
     padding-bottom: 96px;
   }
@@ -167,7 +167,7 @@
 
   .image-hero {
     display: block;
-    width: 552px;
+    width: 592px;
     /* height: 444px; */
   }
 

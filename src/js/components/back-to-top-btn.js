@@ -4,9 +4,8 @@ import getRefs from '../functions/getRefs';
 
 const refs = getRefs();
 
+let previousPageYOffset = window.pageYOffset;
 const breakpoint = 500;
-
-console.log(refs.backToTopButton);
 
 window.addEventListener('scroll', throttle(onWindowScroll, 250));
 refs.backToTopButton.addEventListener('click', onBackToTopBtnClick);
@@ -14,16 +13,21 @@ refs.backToTopButton.addEventListener('click', onBackToTopBtnClick);
 function onWindowScroll(evt) {
   const currentPageYOffset = window.pageYOffset;
 
-  if (currentPageYOffset > breakpoint) {
+  if (
+    currentPageYOffset > previousPageYOffset &&
+    currentPageYOffset > breakpoint
+  ) {
     showBackToTopBtn();
-  } else {
+  } else if (currentPageYOffset < previousPageYOffset) {
     hideBackToTopBtn();
   }
+
+  previousPageYOffset = currentPageYOffset;
 }
 
 function onBackToTopBtnClick(evt) {
   window.scrollTo({
-    top: -document.body.offsetHeight,
+    top: 0,
     behavior: 'smooth',
   });
 }

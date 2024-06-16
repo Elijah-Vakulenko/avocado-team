@@ -5,7 +5,7 @@
   position: fixed;
   right: 5vw;
   bottom: 5vh;
-  z-index: 10;
+  z-index: 9;
   opacity: 1;
 
   display: inline-flex;

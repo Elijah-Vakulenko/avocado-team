@@ -44,7 +44,6 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
 
 section {
@@ -114,7 +113,8 @@ h3 {
   text-transform: uppercase;
 }
 
-h4 {
+h4,
+.description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -337,7 +337,8 @@ textarea {
     letter-spacing: 0.01em;
   }
 
-  h4 {
+  h4,
+  .description {
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;

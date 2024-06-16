@@ -8,7 +8,7 @@
     url('../img/hero-mob-down-1x-min.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 320px 265px, 170px 130px;
-  background-position: right 11px, 142px 483px;
+  background-position: 23px 26px, 163px 495px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -22,6 +22,7 @@
 
 .desc-img h1 {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .btn-p h4 {
@@ -61,6 +62,11 @@
 }
 
 /* ==========================================================TABLET============================================================= */
+@media screen and (min-width: 360px) {
+  .desc-img h1 {
+    width: 320px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .image-hero {
@@ -95,6 +101,7 @@
 
   .hero-section h1 {
     margin-bottom: 60px;
+    width: 704px;
   }
 
   .social-list {

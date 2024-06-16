@@ -8,7 +8,7 @@
     url('../img/hero-mob-down-1x-min.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 320px 265px, 170px 130px;
-  background-position: 23px 26px, 163px 495px;
+  background-position: 23px 26px, 163px 370px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),

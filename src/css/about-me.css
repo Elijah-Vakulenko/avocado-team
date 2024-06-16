@@ -31,7 +31,8 @@
   gap: 18px;
 }
 
-.role-list {
+.role-list,
+.educalion-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -42,18 +43,7 @@
   gap: 18px;
 }
 
-.education-list-item::before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  background-color: #00b068;
-  border-radius: 1px;
-  border: 1px solid #00b068;
-  display: block;
-  flex-shrink: 0;
-  margin-top: 10px;
-}
-
+.education-list-item::before,
 .role-list-item::before {
   content: '';
   width: 4px;
@@ -80,17 +70,10 @@
     gap: 32px;
   }
 
-  .profile-container-text {
-    position: relative;
-  }
-
-  .bg-decor {
+  .section-about .container {
     background-image: url('../img/decor bg 2.png');
-    width: 336px;
-    height: 252px;
-    position: absolute;
-    right: 0px;
-    top: 692px;
+    background-size: 336px 252px;
+    background-position: 400px 850px;
     background-repeat: no-repeat;
   }
 
@@ -130,13 +113,10 @@
     gap: 136px;
   }
 
-  .bg-decor {
+  .section-about .container {
     background-image: url('../img/decor bg 2.png');
-    width: 336px;
-    height: 260px;
-    position: absolute;
-    right: 0px;
-    top: 700px;
+    background-size: 336px 260px;
+    background-position: 865px 690px;
     background-repeat: no-repeat;
   }
 

@@ -19,9 +19,9 @@
 }
 
 @media screen and (max-width: 767px) {
- .btn-p .order-btn::before {
+  .btn-p .order-btn::before {
     width: 165px;
-}
+  }
 }
 
 .desc-img h1 {
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-.btn-p h4 {
+.btn-p .description {
   margin-bottom: 72px;
 }
 
@@ -99,7 +99,7 @@
     }
   }
 
-  .btn-p h4 {
+  .btn-p .description {
     margin-bottom: 80px;
   }
 
@@ -128,7 +128,7 @@
     gap: 136px;
   }
 
-  .btn-p h4 {
+  .btn-p .description {
     width: 592px;
     margin-left: auto;
     margin-bottom: 0;
@@ -173,8 +173,5 @@
   .image-hero {
     display: block;
     width: 592px;
-    /* height: 444px; */
   }
-
- 
 }

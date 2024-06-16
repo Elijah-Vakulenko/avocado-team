@@ -65,8 +65,9 @@
   .benefits .container {
     background-image: url('../img/benef-desk-1x-min.png');
     background-size: 526px 408px;
-    background-position: 718px -152px;
+    background-position: 720px 10px;
     background-repeat: no-repeat;
+    padding-top: 164px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),

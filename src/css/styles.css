@@ -10,6 +10,7 @@
 @import url('./work-together.css');
 @import url('./footer.css');
 @import url('./modal.css');
+@import url('./back-to-top-btn.css');
 
 /* ====================Font setup========================== */
 
@@ -388,6 +389,10 @@ textarea {
 @media screen and (min-width: 1280px) {
   section {
     padding-bottom: 164px;
+  }
+
+  section:nth-last-of-type(5) {
+    padding-bottom: 0px;
   }
 
   .container {

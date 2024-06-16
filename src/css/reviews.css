@@ -1,36 +1,6 @@
-.reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-ul.swiper-wrapper {
-  display: flex;
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.reviews-container {
-  display: flex;
-  gap: 24px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-direction: column;
-  gap: 24px;
-  border-radius: 16px;
-  padding: 32px;
-  min-width: 320px;
-  height: 296px;
-  width: 100%;
-}
+/* 
+* REVIEW
+ */
 
 .review-content {
   font-weight: 300;
@@ -43,9 +13,7 @@ ul.swiper-wrapper {
 .review-author {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
+  justify-content: center;
 }
 
 .review-name {
@@ -54,32 +22,6 @@ ul.swiper-wrapper {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
-}
-
-.swiper-navigation {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  flex-direction: row;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  border: 1px solid rgba(41, 41, 41, 0.3);
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-}
-
-.swiper-button-disabled {
-  opacity: 0.5;
-  cursor: default;
 }
 
 .reviews-error-message {
@@ -100,20 +42,55 @@ ul.swiper-wrapper {
   height: 40px;
 }
 
-.review-item {
-  width: 100%;
+.swiper-slide {
+  min-height: 368px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 24px;
+  padding: 32px;
   background-color: #e4e5e6;
+  border-radius: 16px;
 }
 
-@media screen and (min-width: 786px) {
+.swiper-navigation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(41, 41, 41, 0.3);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* 
+* MEDIA QUERIES
+ */
+
+@media screen and (min-width: 768px) {
   .swiper-slide {
-    width: 100%;
-    height: 224px;
+    min-height: 224px;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-container {
-    height: 400px;
+  .swiper-slide {
+    min-height: 248px;
   }
 }

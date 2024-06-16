@@ -20,6 +20,7 @@
     "izitoast": "^1.4.0",
     "lodash.throttle": "^4.1.1",
     "swiper": "^11.1.4",
+    "throttle": "^1.0.3",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

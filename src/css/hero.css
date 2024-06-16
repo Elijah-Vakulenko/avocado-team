@@ -18,6 +18,11 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+ .btn-p .order-btn::before {
+    width: 165px;
+}
+}
 
 .desc-img h1 {
   margin-bottom: 40px;

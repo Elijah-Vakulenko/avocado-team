@@ -1,8 +1,11 @@
+import project1 from '../../img/my-projects/wallet@1x.jpg';
+import project1Retina from '../../img/my-projects/wallet@2x.jpg';
+
 export default [
   {
     images: {
-      x1: getImageUrl('../../img/my-projects/wallet@1x.jpg'),
-      x2: getImageUrl('../../img/my-projects/wallet@2x.jpg'),
+      x1: project1,
+      x2: project1Retina,
     },
     tags: 'React, JavaScript, Node JS, Git',
     name: 'Wallet webservice',

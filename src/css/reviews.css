@@ -13,7 +13,7 @@
 .review-author {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 16px;
 }
 
 .review-name {
@@ -47,11 +47,16 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 24px;
   padding: 32px;
   background-color: #e4e5e6;
   border-radius: 16px;
+}
+
+li.swiper-slide {
+  display: flex;
+  justify-content: space-between;
 }
 
 .swiper-navigation {
@@ -85,7 +90,6 @@
 @media screen and (min-width: 768px) {
   .swiper-slide {
     min-height: 224px;
-
   }
 }
 

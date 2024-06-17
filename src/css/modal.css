@@ -89,3 +89,7 @@
     fill: transparent;
     cursor: pointer;
 }
+
+.no-scroll {
+    overflow: hidden;
+}

@@ -141,7 +141,7 @@ body.mob-menu-open {
 }
 
 input:checked + .slider {
-  background-color: #000;
+  background-color: #2a2d32;
 }
 
 input:checked + .slider:before {
@@ -279,6 +279,7 @@ input:checked + .slider:before {
   .header {
     padding-top: 32px;
     padding-bottom: 32px;
+position:unset;
   }
 
   .header-nav {

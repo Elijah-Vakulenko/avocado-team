@@ -59,6 +59,11 @@
   color: rgba(41, 41, 41, 0.4);
 }
 
+.email-field:hover,
+.textarea-field:hover {
+  border: 1px solid #00b068;
+}
+
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #e4e5e6 inset !important;
   border: 1px solid none !important;

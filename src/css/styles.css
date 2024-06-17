@@ -13,7 +13,6 @@
 @import url('./switch.css');
 @import url('./back-to-top-btn.css');
 
-
 /* ====================Font setup========================== */
 
 /* Імпортуємо зовнішній шрифт. У теці font завантажили шрифт імпакт. Встановлюємо в проект за допомогою конструкції: */
@@ -40,7 +39,6 @@
   -webkit-text-size-adjust: 100%;
   --social-list-bg-color: #e4e5e6;
   --hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .container {
@@ -162,7 +160,7 @@ p span {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 8;
   border: none;
   border-radius: 16px;
   width: 200px;

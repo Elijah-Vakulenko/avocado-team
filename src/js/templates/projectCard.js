@@ -22,7 +22,7 @@ export default function projectCardTemplate({ images, tags, name, url }) {
           <div class="row">
             <h3 class="project-heading">${name}</h3>
 
-            <a href="${url}" target="_blank" class="project-button">
+            <a href="https://github.com/Elijah-Vakulenko/avocado-team" target="_blank" class="project-button">
               VISIT
               <svg class="project-button-icon" width="19" height="19">
                 <use href="${spriteUrl}#icon-arrow-up-right"></use>

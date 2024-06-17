@@ -4,19 +4,21 @@
 @import url('./about-me.css');
 @import url('./tech-skills.css');
 @import url('./my-projects.css');
-@import url('./benefits.css'); 
+@import url('./benefits.css');
 @import url('./faq.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./footer.css');
 @import url('./modal.css');
 @import url('./switch.css');
+@import url('./back-to-top-btn.css');
+
 
 /* ====================Font setup========================== */
 
 /* Імпортуємо зовнішній шрифт. У теці font завантажили шрифт імпакт. Встановлюємо в проект за допомогою конструкції: */
 @font-face {
-  font-family: 'Impact', sans-serif;
+  font-family: 'Impact';
   src: url(../font/impact.ttf);
 }
 /* ========================================================= */
@@ -37,6 +39,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --social-list-bg-color: #e4e5e6;
+  --hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -45,12 +48,10 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-  outline: red;
 }
 
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .is-hidden {
@@ -116,7 +117,8 @@ h3 {
   text-transform: uppercase;
 }
 
-h4 {
+h4,
+.description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -163,14 +165,16 @@ p span {
   z-index: -1;
   border: none;
   border-radius: 16px;
-  width: 165px;
+  width: 200px;
   height: 100%;
   background-color: rgba(0, 176, 104, 0.2);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-btn:hover::before {
   background-color: rgba(0, 176, 104, 0.6);
+  transform: translateX(-40px);
 }
 
 .fill-icon {
@@ -266,10 +270,6 @@ input {
   background-color: #e4e5e6;
 }
 
-/* input::placeholder {
-  color: rgba(41, 41, 41, 0.4);
-} */
-
 textarea {
   display: flex;
   align-items: center;
@@ -284,9 +284,6 @@ textarea {
   background-color: #e4e5e6;
 }
 
-/* textarea::placeholder {
-  color: rgba(41, 41, 41, 0.4);
-} */
 /* ================================АДАПТИВ======================================= */
 
 @media screen and (min-width: 360px) {
@@ -307,8 +304,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   section {
-    padding-top: 62px;
-    padding-bottom: 62px;
+    padding-bottom: 124px;
   }
 
   section:nth-last-of-type(2) {
@@ -345,7 +341,8 @@ textarea {
     letter-spacing: 0.01em;
   }
 
-  h4 {
+  h4,
+  .description {
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;
@@ -362,6 +359,10 @@ textarea {
   .order-btn::before {
     border-radius: 16px;
     width: 261px;
+  }
+
+  .order-btn:hover::before {
+    transform: translateX(-155px);
   }
 
   /* .load-more-btn {
@@ -392,12 +393,19 @@ textarea {
 
 @media screen and (min-width: 1280px) {
   section {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 164px;
+  }
+
+  section:nth-last-of-type(5) {
+    padding-bottom: 0px;
   }
 
   .container {
     max-width: 1280px;
+  }
+
+  h1 {
+    font-size: 124px;
   }
 
   input,

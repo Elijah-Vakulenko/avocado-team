@@ -1,10 +1,10 @@
-.wt-section {
-  padding-top: 80px;
-}
-
 .work-together-subtitle {
   margin-top: 40px;
   margin-bottom: 32px;
+}
+
+.wt-section .container {
+  padding-top: 0;
 }
 /* ==========================Contact list============================== */
 .contacts {
@@ -147,23 +147,18 @@ input:-webkit-autofill {
 
 /* =================================ADAPTATIVE Design============================================== */
 
-@media screen and (min-width: 360px) {
-}
-
 @media screen and (min-width: 768px) {
-  .wt-section {
+  .wt-section .container {
     padding-top: 124px;
-    background-image: url('./img/bg-4-1x-min.png');
-    background-position: 98% 7%;
+    background-image: url('../img/wt-tab-1x-min.png');
+    background-position: 408px 20px;
     background-repeat: no-repeat;
     background-size: 336px 260px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .wt-section {
-      background-image: url('./img/bg-4-2x-min.png');
+  @media screen and (min-resolution: 2dppx) {
+    .wt-section .container {
+      background-image: url('../img/wt-tab-2x-min.png');
     }
   }
 
@@ -179,12 +174,18 @@ input:-webkit-autofill {
 }
 
 @media screen and (min-width: 1280px) {
-  .wt-section {
-    padding-top: 164px;
-    background-image: url('../img/bg-4-1x-min.png');
-    background-position: 88% 9%;
+  .wt-section .container {
+    background-image: url('../img/wt-tab-1x-min.png');
+    background-position: 722px 55px;
     background-repeat: no-repeat;
     background-size: 526px 408px;
+    padding-top: 164px;
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .wt-section .container {
+      background-image: url('../img/wt-tab-2x-min.png');
+    }
   }
 
   .work-together-title {

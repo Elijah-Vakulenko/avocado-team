@@ -1,3 +1,5 @@
+import spriteUrl from '../../img/my-projects-sprite.svg';
+
 export default function projectCardTemplate({ images, tags, name, url }) {
   return `
       <li class="project-item">
@@ -20,10 +22,10 @@ export default function projectCardTemplate({ images, tags, name, url }) {
           <div class="row">
             <h3 class="project-heading">${name}</h3>
 
-            <a href="${url}" target="_blank" class="project-button">
+            <a href="https://github.com/Elijah-Vakulenko/avocado-team" target="_blank" class="project-button">
               VISIT
               <svg class="project-button-icon" width="19" height="19">
-                <use href="../img/symbol-defs.svg#icon-arrow-up-right"></use>
+                <use href="${spriteUrl}#icon-arrow-up-right"></use>
               </svg>
             </a>
           </div>

@@ -1,4 +1,6 @@
 const changeTheme = document.querySelector('#switch');
+// Mobal switcher↓
+const changeThemeMob = document.querySelector('#mob-switch');
 const root = document.documentElement;
 const p = document.querySelectorAll('p');
 const li = document.querySelectorAll('li');
@@ -84,6 +86,8 @@ const applyTheme = (isDark) => {
     openMenuIcon.style.setProperty('fill', '#f0f0f0');
     faqMoreBtn.forEach(p => p.style.setProperty('stroke', '#f0f0f0'));
     faqMoreDownBtn.forEach(p => p.style.setProperty('stroke', '#f0f0f0'));
+    
+
   } else {
     root.style.removeProperty('background-color');
     root.style.removeProperty('color');
@@ -148,6 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 changeTheme.addEventListener('change', (event) => {
+  const isDark = event.target.checked;
+  applyTheme(isDark);
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+// mobal switcher
+changeThemeMob.addEventListener('change', (event) => {
   const isDark = event.target.checked;
   applyTheme(isDark);
   localStorage.setItem('theme', isDark ? 'dark' : 'light');

@@ -96,7 +96,16 @@
   .faq-decor {
     background-image: url('../img/decor-faq.png');
     background-size: 526px 408px;
-    background-position: 3px 487px;
+    background-position: 5px 610px;
     background-repeat: no-repeat;
   }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .faq-decor {
+    background-image: url('../img/decor-faq-2x.png');
+  }
+}
+
 }

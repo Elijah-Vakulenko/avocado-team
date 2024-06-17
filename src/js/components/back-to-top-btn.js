@@ -34,8 +34,10 @@ function onBackToTopBtnClick(evt) {
 
 function showBackToTopBtn() {
   refs.backToTopButton.classList.remove('is-hidden');
+  refs.backToTopButton.classList.add('fadeInUp');
 }
 
 function hideBackToTopBtn() {
   refs.backToTopButton.classList.add('is-hidden');
+  refs.backToTopButton.classList.remove('fadeInUp');
 }

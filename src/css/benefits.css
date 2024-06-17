@@ -70,9 +70,7 @@
     padding-top: 164px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 2dppx) {
     .benefits .container {
       background-image: url('../img/benef-desk-2x-min.png');
     }

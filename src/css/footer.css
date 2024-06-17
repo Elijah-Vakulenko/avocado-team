@@ -9,8 +9,6 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .logo-social {
@@ -27,10 +25,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-}
-
-.social-links li {
-  margin: 0;
 }
 
 .social-links a {
@@ -77,11 +71,6 @@
 
 /* Адаптивність для планшетів (від 768px) */
 @media screen and (min-width: 768px) {
-  .footer-content {
-    max-width: 1000px;
-    padding: 0;
-  }
-
   .logo-footer h3 {
     padding-bottom: 32px;
   }
@@ -114,10 +103,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .logo-footer h3 {
-    margin: 0;
   }
 
   .social-links {

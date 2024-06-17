@@ -63,6 +63,20 @@
   margin: 0;
 }
 
+
+.social-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: var(--social-list-bg-color);
+  z-index: -1;
+}
+
 .image-hero {
   display: none;
 }

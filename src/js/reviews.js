@@ -97,6 +97,12 @@ async function fetchAndRender() {
   }
 }
 
+function updateNavigationButtons() {
+    prevButton.disabled = swiper.isBeginning;
+    nextButton.disabled = swiper.isEnd;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   fetchAndRender();
 });
+

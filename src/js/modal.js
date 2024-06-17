@@ -1,3 +1,7 @@
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
+
 const submitBtn = document.querySelector('.form-btn');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.btn-close');
@@ -11,12 +15,16 @@ const showModal = (title, message) => {
     modalHeader.textContent = title;
     modalText.textContent = message;
     overlay.classList.remove('hidden');
+    document.body.classList.add('no-scroll'); 
     setTimeout(() => overlay.classList.add('visible'), 10);
 };
 
 const hideModal = () => {
     overlay.classList.remove('visible');
-    setTimeout(() => overlay.classList.add('hidden'), 500);
+    setTimeout(() => {
+        overlay.classList.add('hidden');
+        document.body.classList.remove('no-scroll'); 
+    }, 500);
 };
 
 const isFormValid = () => {
@@ -26,7 +34,10 @@ const isFormValid = () => {
     for (let element of form.elements) {
         if (element.type !== 'submit') {
             if (element.value.trim() === '') {
-                alert('Please fill all the fields');
+                iziToast.warning({
+                    title: 'Caution',
+                    message: 'Please fill all the fields.',
+                });
                 valid = false;
                 break;
             }
@@ -37,7 +48,10 @@ const isFormValid = () => {
     }
 
     if (valid && emailField && !emailPattern.test(emailField.value.trim())) {
-        alert('Please enter a correct email');
+        iziToast.warning({
+            title: 'Caution',
+            message: 'Please enter a correct email address.',
+        });
         return false;
     }
 
@@ -71,7 +85,10 @@ submitBtn.addEventListener('click', async (event) => {
             'The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.'
         );
     } catch (error) {
-        alert(`There was an error submitting the form: ${error.message}. Please check your data and try again.`);
+        iziToast.error({
+            title: 'Error',
+            message: error.message,
+        });
     }
 });
 

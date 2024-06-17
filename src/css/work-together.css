@@ -156,9 +156,7 @@ input:-webkit-autofill {
     background-size: 336px 260px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 2dppx) {
     .wt-section .container {
       background-image: url('../img/wt-tab-2x-min.png');
     }
@@ -184,9 +182,7 @@ input:-webkit-autofill {
     padding-top: 164px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 2dppx) {
     .wt-section .container {
       background-image: url('../img/wt-tab-2x-min.png');
     }

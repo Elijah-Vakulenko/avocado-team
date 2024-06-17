@@ -25,7 +25,8 @@
 }
 
 .header.dark.is-fixed {
-  background-color: #2a2d32;
+  background-color: #1e2023;
+border-bottom: 1px solid #292929;
 }
 
 .header.is-fixed {
@@ -38,7 +39,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  background-color: #fff;
+  background-color: #f0f0f0;
   backdrop-filter: blur(5px);
 
   transform: translateY(0);

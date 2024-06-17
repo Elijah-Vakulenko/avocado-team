@@ -24,6 +24,10 @@
   transform: translateY(-100%);
 }
 
+.header.dark.is-fixed {
+  background-color: #2a2d32;
+}
+
 .header.is-fixed {
   position: fixed;
   top: 0;

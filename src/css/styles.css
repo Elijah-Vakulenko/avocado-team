@@ -10,6 +10,7 @@
 @import url('./work-together.css');
 @import url('./footer.css');
 @import url('./modal.css');
+@import url('./switch.css');
 
 /* ====================Font setup========================== */
 
@@ -35,6 +36,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --social-list-bg-color: #e4e5e6;
+
 }
 
 .container {

@@ -63,3 +63,4 @@ function updateNavigationButtons() {
     prevButton.disabled = swiper.isBeginning;
     nextButton.disabled = swiper.isEnd;
 }
+

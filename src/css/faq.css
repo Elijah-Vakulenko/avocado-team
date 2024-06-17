@@ -93,18 +93,13 @@
     margin-top: 276px;
   }
 
-  .faq-decor {
-    background-image: url('../img/decor-faq.png');
-    background-size: 526px 408px;
-    background-position: 5px 610px;
-    background-repeat: no-repeat;
-  }
+.faq-decor {
+  background: url('../img/decor-faq.png') 5px 610px / 526px 408px no-repeat;
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .faq-decor {
-    background-image: url('../img/decor-faq-2x.png');
+      background-image: url('../img/decor-faq-2x.png');
   }
 }
 

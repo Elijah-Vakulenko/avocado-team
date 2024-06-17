@@ -7,17 +7,10 @@
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-
   padding-top: 20px;
   padding-bottom: 20px;
 
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header.is-hidden {
@@ -26,7 +19,7 @@
 
 .header.dark.is-fixed {
   background-color: #1e2023;
-border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #292929;
 }
 
 .header.is-fixed {
@@ -284,7 +277,6 @@ input:checked + .slider:before {
   .header {
     padding-top: 32px;
     padding-bottom: 32px;
-position:unset;
   }
 
   .header-nav {

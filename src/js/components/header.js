@@ -3,8 +3,6 @@ import getRefs from '../functions/getRefs';
 
 const refs = getRefs();
 
-setBodyPadding();
-
 window.addEventListener('scroll', throttle(onWindowScroll, 250));
 
 let previousPageYOffset = window.pageYOffset;
@@ -33,9 +31,4 @@ function hideHeader() {
 function showHeader() {
   refs.header.classList.add('is-fixed');
   refs.header.classList.add('fadeInDown');
-}
-
-function setBodyPadding() {
-  const headerHeight = refs.header.clientHeight;
-  document.body.style.paddingTop = headerHeight + 'px';
 }

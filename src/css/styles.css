@@ -33,9 +33,9 @@
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-smoothing: antialiased;
+  font-smoothing: grayscale;
+  text-size-adjust: 100%;
   --hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

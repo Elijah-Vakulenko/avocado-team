@@ -114,9 +114,7 @@ body.mob-menu-open {
   transition: transform 2s ease-in-out;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .mob-menu {
     background-image: url('../img/header-bg2x.png');
   }

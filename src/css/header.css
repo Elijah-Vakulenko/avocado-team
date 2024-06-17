@@ -90,6 +90,10 @@
   height: 16px;
 }
 
+body.mob-menu-open {
+  overflow: hidden;
+}
+
 .mob-menu {
   width: 100vw;
   height: 100%;

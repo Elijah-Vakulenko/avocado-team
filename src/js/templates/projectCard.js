@@ -6,13 +6,14 @@ export default function projectCardTemplate({ images, tags, name, url }) {
       <li class="project-item">
         <div class="project-thumb">
           <img
+            loading="lazy"
             srcset="
               ${images.x1} 1x,
               ${images.x2} 2x
             "
-            src="${images.x1}"
+            data-src="${images.x1}"
             alt="${name}"
-            class="project-image"
+            class="project-image lazyload"
           />
           <span class="image-loading js-image-loading">
             <span class="loader"></span>

@@ -1,0 +1,9 @@
+img[loading='lazy'] {
+  opacity: 0;
+
+  transition: opacity 500ms linear 500ms;
+}
+
+img.appear {
+  opacity: 1;
+}

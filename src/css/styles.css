@@ -12,6 +12,7 @@
 @import url('./modal.css');
 @import url('./switch.css');
 @import url('./back-to-top-btn.css');
+@import url('./lazy-images.css');
 
 /* ====================Font setup========================== */
 
@@ -38,9 +39,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --social-list-bg-color: #e4e5e6;
-  --button-bg-color-dark: #2A2D32;
-  --button-bg-color: #E4E5E6;
-
+  --button-bg-color-dark: #2a2d32;
+  --button-bg-color: #e4e5e6;
 }
 
 .container {

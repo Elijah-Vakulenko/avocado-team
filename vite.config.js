@@ -1,3 +1,4 @@
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { defineConfig } from 'vite';
 import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
@@ -25,6 +26,17 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [
+      injectHTML(),
+      FullReload(['./src/**/**.html']),
+      ViteImageOptimizer({
+        jpeg: {
+          quality: 70,
+        },
+        jpg: {
+          quality: 70,
+        },
+      }),
+    ],
   };
 });

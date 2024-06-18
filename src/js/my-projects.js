@@ -6,6 +6,11 @@ import projectCardTemplate from './templates/projectCard';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+let lazyImages = null;
+
 const refs = getRefs();
 const projectsAPI = new ProjectsAPI();
 const loadMoreBtn = new LoadMoreBtn({
@@ -22,6 +27,14 @@ projectsAPI
   })
   .then(projects => {
     renderProjects(projects);
+  })
+  .then(() => {
+    lazyImages = refs.projectsList.querySelectorAll('img[data-src]');
+    console.log('🚀 -> lazyImages:', lazyImages);
+
+    lazyImages.forEach(image => {
+      image.addEventListener('load', onLazyImageLoaded, { once: true });
+    });
   })
   .finally(() => {
     setupImageLoad();
@@ -50,6 +63,14 @@ function onLoadMore() {
       projectsAPI.incrementPage();
       smoothScroll();
     })
+    .then(() => {
+      lazyImages = refs.projectsList.querySelectorAll('img[data-src]');
+      console.log('🚀 -> lazyImages:', lazyImages);
+
+      lazyImages.forEach(image => {
+        image.addEventListener('load', onLazyImageLoaded, { once: true });
+      });
+    })
     .catch(error => console.log(error))
     .finally(() => {
       loadMoreBtn.enable();
@@ -71,7 +92,7 @@ function smoothScroll() {
 function renderProjects(projects) {
   const markup = projects.map(projectCardTemplate).join('');
   refs.projectsList.insertAdjacentHTML('beforeend', markup);
-  setupThemeForProjects(); 
+  setupThemeForProjects();
 }
 
 export function setupThemeForProjects() {
@@ -95,4 +116,9 @@ function onImageLoaded(evt) {
   const loading = evt.target.nextElementSibling;
 
   loading.classList.add('hidden');
+}
+
+function onLazyImageLoaded(evt) {
+  console.log('Картинка загрузилась');
+  evt.target.classList.add('appear');
 }

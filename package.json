@@ -21,6 +21,7 @@
     "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
     "izitoast": "^1.4.0",
+    "lazysizes": "^5.3.2",
     "lodash.throttle": "^4.1.1",
     "swiper": "^11.1.4",
     "throttle": "^1.0.3",

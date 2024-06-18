@@ -4,7 +4,12 @@
       <h1>Hello, I am <span>Fullstack developer</span></h1>
       <picture>
         <source srcset="./img/hero-1x-min.png 1x, ./img/hero-2x-min.png 2x" />
-        <img class="image-hero" src="./img/hero-1x-min.png" alt="Hero photo" />
+        <img
+          loading="lazy"
+          class="image-hero lazyload"
+          data-src="./img/hero-1x-min.png"
+          alt="Hero photo"
+        />
       </picture>
     </div>
     <div class="btn-p">

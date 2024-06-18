@@ -121,6 +121,15 @@
   background-color: #bbbbbb;
 }
 
+.project-button.dark {
+  background-color: #3b3f45;
+}
+
+.project-button.dark:hover,
+.project-button.dark:focus {
+  background-color: #2a2d32;
+}
+
 /* 
 * LOAD MORE BTN
  */
@@ -139,6 +148,11 @@
   border: none;
 
   transition: color 250ms ease-in-out;
+}
+
+.load-more-btn.dark {
+  color: rgb(240, 240, 240);
+  background: rgb(30, 32, 35);
 }
 
 .load-more-btn::after {

@@ -1,3 +1,9 @@
+import getTheme from './functions/getTheme';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+let lazyImages = null;
+
 const reviewsContainer = document.querySelector('.reviews-container');
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const pagination = document.querySelector('.swiper-pagination');
@@ -21,13 +27,16 @@ async function fetchAndRender() {
     }
 
     const render = reviews
+
       .map(
         review => `
-      <li class="swiper-slide">
+      <li class="swiper-slide ${getTheme() === 'dark' ? 'dark' : ''}">
         <p class="review-content">${review.review}</p>
 
         <div class="review-author">
-          <img class="review-avatar" src="${review.avatar_url}" alt="Avatar">
+          <img loading="lazy" class="review-avatar lazyload" data-src="${
+            review.avatar_url
+          }" alt="Avatar">
           <p class="review-name">${review.author}</p>
         </div>
       </li>
@@ -36,6 +45,13 @@ async function fetchAndRender() {
       .join('');
 
     document.getElementById('reviews').innerHTML = render;
+
+    lazyImages = swiperWrapper.querySelectorAll('img[data-src]');
+    console.log('🚀 -> lazyImages:', lazyImages);
+
+    lazyImages.forEach(image => {
+      image.addEventListener('load', onImageLoaded, { once: true });
+    });
 
     new Swiper('.swiper', {
       direction: 'horizontal',
@@ -98,11 +114,15 @@ async function fetchAndRender() {
 }
 
 function updateNavigationButtons() {
-    prevButton.disabled = swiper.isBeginning;
-    nextButton.disabled = swiper.isEnd;
+  prevButton.disabled = swiper.isBeginning;
+  nextButton.disabled = swiper.isEnd;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchAndRender();
 });
 
+function onImageLoaded(evt) {
+  console.log('Картинка загрузилась');
+  evt.target.classList.add('appear');
+}

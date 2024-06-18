@@ -110,7 +110,7 @@
 
   font-weight: 500;
 
-  background-color: #e4e5e6;
+  background-color: var(--button-bg-color, #e4e5e6);
   border-radius: 8px;
 
   transition: background-color 250ms ease-in-out;

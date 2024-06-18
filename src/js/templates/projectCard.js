@@ -23,7 +23,7 @@ export default function projectCardTemplate({ images, tags, name, url }) {
             <a href="${url}" target="_blank" class="project-button">
               VISIT
               <svg class="project-button-icon" width="19" height="19">
-                <use href="../img/symbol-defs.svg#icon-arrow-up-right"></use>
+                <use href="./img/symbol-defs.svg#icon-arrow-up-right"></use>
               </svg>
             </a>
           </div>

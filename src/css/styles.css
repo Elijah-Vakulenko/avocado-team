@@ -37,6 +37,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --social-list-bg-color: #e4e5e6;
+  --button-bg-color-dark: #2A2D32;
+  --button-bg-color: #E4E5E6;
 
 }
 

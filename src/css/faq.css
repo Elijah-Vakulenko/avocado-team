@@ -3,7 +3,7 @@
 }
 
 .faq-list-item {
-    background: var(--White, #F0F0F0);
+    /* background: var(--White, #F0F0F0); */
     border-radius: 0;
     padding: 28px 24px;
 }

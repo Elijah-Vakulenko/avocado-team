@@ -7,9 +7,8 @@ const h4 = document.querySelectorAll('h4');
 const btn = document.querySelectorAll('button');
 const faqItem = document.querySelectorAll('#faq-list-item');
 const orderBtn = document.querySelectorAll('a');
-const projectButtons = document.querySelectorAll('.project-button');
+const projectButtons = document.getElementById('.project-button'); 
 const ulSocialList = document.querySelector('.social-list');
-
 const firstTechSkillsList = document.querySelector('.tech-skills-cover:first-of-type');
 const secondTechSkillsList = document.querySelector('.tech-skills-cover.cover-rotate');
 
@@ -29,7 +28,8 @@ const openMenuIcon = document.querySelector('.burg-icon');
 const faqMoreBtn = document.querySelectorAll('.faq-icon-up');
 const faqMoreDownBtn = document.querySelectorAll('.faq-icon-down');
 
-const applyTheme = (isDark) => {
+const applyTheme = (isDark, projectButtons = []) => {
+  console.log('Applying theme:', isDark ? 'dark' : 'light');
   if (isDark) {
     root.style.setProperty('background-color', '#1E2023');
     root.style.setProperty('color', 'white');
@@ -41,11 +41,11 @@ const applyTheme = (isDark) => {
     h4.forEach((h4) => h4.style.setProperty('color', '#f0f0f0'));
     btn.forEach((btn) => btn.style.setProperty('color', '#f0f0f0'));
     faqItem.forEach((faqItem) => {
-      faqItem.style.setProperty('background', '#2A2D32');
+      // faqItem.style.setProperty('background', '#2A2D32');
       Array.from(faqItem.children).forEach((child) => child.style.setProperty('color', '#f0f0f0'));
     });
     orderBtn.forEach((orderBtn) => orderBtn.classList.add("dark-project-button"));
-    projectButtons.forEach((btn) => btn.classList.add('dark-theme'));
+    projectButtons.forEach((btn) => btn.style.setProperty('--button-bg-color', '#2A2D32'));
 
     firstTechSkillsList.style.setProperty('background-color', '#204136');
     firstTechSkillsList.querySelectorAll('li').forEach((li) => {
@@ -77,13 +77,16 @@ const applyTheme = (isDark) => {
     modalFormContainer.style.setProperty('background', '#2A2D32');
     loadMoreBtn.style.setProperty('color', '#f0f0f0');
     loadMoreBtn.style.setProperty('background', '#1E2023');
-    mobMenu.style.setProperty('background', '#1E2023');
+    mobMenu.style.setProperty('background-color', '#1E2023');
     closeMobMenuBtn.style.setProperty('background', '#1E2023');
     closeMenuIcon.style.setProperty('stroke', '#f0f0f0');
     openMenuIcon.style.setProperty('stroke', '#f0f0f0');
     openMenuIcon.style.setProperty('fill', '#f0f0f0');
     faqMoreBtn.forEach(p => p.style.setProperty('stroke', '#f0f0f0'));
     faqMoreDownBtn.forEach(p => p.style.setProperty('stroke', '#f0f0f0'));
+
+    projectButtons.forEach((btn) => btn.style.setProperty('background-color', '#2A2D32'));
+
   } else {
     root.style.removeProperty('background-color');
     root.style.removeProperty('color');
@@ -95,11 +98,11 @@ const applyTheme = (isDark) => {
     h4.forEach((h4) => h4.style.removeProperty('color'));
     btn.forEach((btn) => btn.style.removeProperty('color'));
     faqItem.forEach((faqItem) => {
-      faqItem.style.removeProperty('background');
+      // faqItem.style.removeProperty('background');
       Array.from(faqItem.children).forEach((child) => child.style.removeProperty('color'));
     });
     orderBtn.forEach((orderBtn) => orderBtn.classList.remove("dark-project-button"));
-    projectButtons.forEach((btn) => btn.classList.remove('dark-theme'));
+    // projectButtons.forEach((btn) => btn.classList.remove('dark-theme'));
 
     firstTechSkillsList.style.removeProperty('background-color');
     firstTechSkillsList.querySelectorAll('li').forEach((li) => {
@@ -138,6 +141,9 @@ const applyTheme = (isDark) => {
     openMenuIcon.style.removeProperty('fill');
     faqMoreBtn.forEach(p => p.style.removeProperty('stroke'));
     faqMoreDownBtn.forEach(p => p.style.removeProperty('stroke'));
+
+    projectButtons.forEach((btn) => btn.style.setProperty('--button-bg-color', '#E4E5E6'));
+
   }
 };
 
@@ -152,3 +158,11 @@ changeTheme.addEventListener('change', (event) => {
   applyTheme(isDark);
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
+
+// document.addEventListener('projectsRendered', (event) => {
+//   const isDark = localStorage.getItem('theme') === 'dark';
+//   projectButtons = event.detail;
+//   applyTheme(isDark, projectButtons); 
+// });
+
+// console.log(projectButtons);

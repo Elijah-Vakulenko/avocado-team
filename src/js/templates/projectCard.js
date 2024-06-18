@@ -1,4 +1,4 @@
-import spriteUrl from '../../img/my-projects-sprite.svg';
+import spriteUrl from '../../img/icons.svg';
 
 export default function projectCardTemplate({ images, tags, name, url }) {
   return `
@@ -26,7 +26,7 @@ export default function projectCardTemplate({ images, tags, name, url }) {
               VISIT
               <svg class="project-button-icon" width="19" height="19">
 
-                <use href="./img/symbol-defs.svg#icon-arrow-up-right"></use>
+                <use href="./img/icons.svg#icon-arrow-up-right"></use>
 
               </svg>
             </a>

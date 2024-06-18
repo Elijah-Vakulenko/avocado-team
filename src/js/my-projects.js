@@ -71,6 +71,16 @@ function smoothScroll() {
 function renderProjects(projects) {
   const markup = projects.map(projectCardTemplate).join('');
   refs.projectsList.insertAdjacentHTML('beforeend', markup);
+  setupThemeForProjects(); 
+}
+
+export function setupThemeForProjects() {
+  const projectButtons = document.querySelectorAll('.project-button');
+  if (projectButtons.length === 0) {
+    console.error('Project buttons not found');
+    return;
+  }
+  return projectButtons;
 }
 
 function setupImageLoad() {

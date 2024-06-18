@@ -25,7 +25,9 @@ export default function projectCardTemplate({ images, tags, name, url }) {
             <a href="https://github.com/Elijah-Vakulenko/avocado-team" target="_blank" class="project-button">
               VISIT
               <svg class="project-button-icon" width="19" height="19">
-                <use href="${spriteUrl}#icon-arrow-up-right"></use>
+
+                <use href="./img/symbol-defs.svg#icon-arrow-up-right"></use>
+
               </svg>
             </a>
           </div>

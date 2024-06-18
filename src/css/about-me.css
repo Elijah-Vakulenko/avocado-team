@@ -77,6 +77,12 @@
     background-repeat: no-repeat;
   }
 
+    @media screen and (min-resolution: 2dppx) {
+      .section-about .container {
+        background-image: url('../img/decor bg 2 2x.png');
+      }
+    }
+
   .education-role-container {
     margin-top: 60px;
     gap: 32px;
@@ -119,6 +125,12 @@
     background-position: 865px 690px;
     background-repeat: no-repeat;
   }
+
+    @media screen and (min-resolution: 2dppx) {
+      .section-about .container {
+        background-image: url('../img/decor bg 2 2x.png');
+      }
+    }
 
   .education {
     width: 384px;

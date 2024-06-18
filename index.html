@@ -18,9 +18,9 @@
 
     
     <script type="module" crossorigin src="/avocado-team/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/avocado-team/assets/vendor-b0f3b1d6.js">
+    <link rel="modulepreload" crossorigin href="/avocado-team/assets/vendor-862ff358.js">
     <link rel="stylesheet" href="/avocado-team/assets/vendor-493db78f.css">
-    <link rel="stylesheet" href="/avocado-team/assets/index-47d0edb2.css">
+    <link rel="stylesheet" href="/avocado-team/assets/index-ec040bae.css">
   </head>
   <body>
     <div class="mob-menu">
@@ -81,7 +81,12 @@
       <h1>Hello, I am <span>Fullstack developer</span></h1>
       <picture>
         <source srcset="/avocado-team/assets/hero-1x-min-081da553.png 1x, /avocado-team/assets/hero-2x-min-5e386273.png 2x" />
-        <img class="image-hero" src="/avocado-team/assets/hero-1x-min-081da553.png" alt="Hero photo" />
+        <img
+          loading="lazy"
+          class="image-hero lazyload"
+          data-src="./img/hero-1x-min.png"
+          alt="Hero photo"
+        />
       </picture>
     </div>
     <div class="btn-p">
@@ -126,9 +131,10 @@
     <h2>About <span>me</span></h2>
     <div class="profile-container">
       <img
+        loading="lazy"
         srcset="/avocado-team/assets/about-me-img-8497dedc.png , /avocado-team/assets/about-me-img-x2-f8d78d51.png "
-        src="/avocado-team/assets/about-me-img-8497dedc.png"
-        class="about-img"
+        data-src="./img/about-me-img.png"
+        class="about-img lazyload"
         alt="profile-photo"
       />
       <div class="profile-container-text">
@@ -581,12 +587,12 @@ The terms of project implementation depend to a large extent on a
       <ul class="swiper-wrapper" id="reviews"></ul>
       <div class="swiper-navigation">
         <button class="swiper-button-prev">
-          <svg width="24" height="24">
-            <use href="/avocado-team/assets/icons-e22111ae.svg#icon-arrow-narrow-right"></use>
+          <svg class="icon" width="24" height="24">
+            <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
         <button class="swiper-button-next">
-          <svg width="24" height="24">
+          <svg class="icon" width="24" height="24">
             <use href="/avocado-team/assets/icons-e22111ae.svg#icon-arrow-narrow-left"></use>
           </svg>
         </button>

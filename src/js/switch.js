@@ -32,6 +32,8 @@ const openMenuIcon = document.querySelector('.burg-icon');
 const faqMoreBtn = document.querySelectorAll('.faq-icon-up');
 const faqMoreDownBtn = document.querySelectorAll('.faq-icon-down');
 
+const closeModalIcon = document.querySelector('.btn-close')
+
 
 const applyTheme = (isDark, projectButtons = []) => {
   console.log('Applying theme:', isDark ? 'dark' : 'light');
@@ -98,6 +100,7 @@ const applyTheme = (isDark, projectButtons = []) => {
     mobMenu.style.setProperty('background-color', '#1E2023');
     closeMobMenuBtn.style.setProperty('background', '#1E2023');
     closeMenuIcon.style.setProperty('stroke', '#f0f0f0');
+    closeModalIcon.style.setProperty('stroke', '#f0f0f0');
     openMenuIcon.style.setProperty('stroke', '#f0f0f0');
     openMenuIcon.style.setProperty('fill', '#f0f0f0');
     faqMoreBtn.forEach(p => p.style.setProperty('stroke', '#f0f0f0'));
@@ -105,7 +108,7 @@ const applyTheme = (isDark, projectButtons = []) => {
 
 
     projectButtons.forEach((btn) => btn.style.setProperty('background-color', '#2A2D32'));
-
+    header.classList.add('dark');
   } else {
     root.style.removeProperty('background-color');
     root.style.removeProperty('color');

@@ -37,6 +37,10 @@ const isFormValid = () => {
                 iziToast.warning({
                     title: 'Caution',
                     message: 'Please fill all the fields.',
+                           position: "center",
+        messageColor: 'black',
+        backgroundColor: '#CCEFE1',
+        progressBarColor: '#009156',
                 });
                 valid = false;
                 break;
@@ -51,6 +55,10 @@ const isFormValid = () => {
         iziToast.warning({
             title: 'Caution',
             message: 'Please enter a correct email address.',
+            position: "center",
+        messageColor: 'black',
+        backgroundColor: '#CCEFE1',
+        progressBarColor: '#009156',
         });
         return false;
     }
@@ -88,6 +96,10 @@ submitBtn.addEventListener('click', async (event) => {
         iziToast.error({
             title: 'Error',
             message: error.message,
+                   position: "center",
+        messageColor: 'black',
+        backgroundColor: '#CCEFE1',
+        progressBarColor: '#009156',
         });
     }
 });

@@ -49,7 +49,6 @@ const applyTheme = isDark => {
     h4.forEach(h4 => h4.style.setProperty('color', '#f0f0f0'));
     btn.forEach(btn => btn.style.setProperty('color', '#f0f0f0'));
     faqItem.forEach(faqItem => {
-      faqItem.style.setProperty('background', '#2A2D32');
       Array.from(faqItem.children).forEach(child =>
         child.style.setProperty('color', '#f0f0f0')
       );
@@ -117,7 +116,6 @@ const applyTheme = isDark => {
     h4.forEach(h4 => h4.style.removeProperty('color'));
     btn.forEach(btn => btn.style.removeProperty('color'));
     faqItem.forEach(faqItem => {
-      faqItem.style.removeProperty('background');
       Array.from(faqItem.children).forEach(child =>
         child.style.removeProperty('color')
       );

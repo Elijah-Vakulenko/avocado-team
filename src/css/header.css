@@ -1,10 +1,4 @@
-/* Mobile menu switcher */
 
-.mob-menu-switcher {
-  display: flex;
-  justify-content: center;
-  margin-top: 270px;
-}
 
 .header {
   padding-top: 20px;
@@ -32,7 +26,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  background-color: #f0f0f0;
+  background-color: #1e2023;
   backdrop-filter: blur(5px);
 
   transform: translateY(0);

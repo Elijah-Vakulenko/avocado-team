@@ -46,6 +46,10 @@
   margin-top: 40px;
 }
 
+.currentData {
+  color: inherit;
+}
+
 /* Перенос тексту на новий рядок для мобільних пристроїв */
 @media screen and (max-width: 767px) {
   .copyright {

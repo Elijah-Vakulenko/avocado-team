@@ -9,4 +9,3 @@ import './js/reviews';
 import './js/components/back-to-top-btn';
 import './js/components/header';
 import './js/lazyImages';
-import './js/footer';

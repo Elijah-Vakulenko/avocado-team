@@ -6,6 +6,7 @@ import './js/faq';
 import './js/modal';
 import './js/switch';
 import './js/reviews';
+import './js/footer';
 import './js/components/back-to-top-btn';
 import './js/components/header';
 import './js/lazyImages';

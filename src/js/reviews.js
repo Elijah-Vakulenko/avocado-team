@@ -47,7 +47,6 @@ async function fetchAndRender() {
     document.getElementById('reviews').innerHTML = render;
 
     lazyImages = swiperWrapper.querySelectorAll('img[data-src]');
-    console.log('🚀 -> lazyImages:', lazyImages);
 
     lazyImages.forEach(image => {
       image.addEventListener('load', onImageLoaded, { once: true });
@@ -123,6 +122,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function onImageLoaded(evt) {
-  console.log('Картинка загрузилась');
   evt.target.classList.add('appear');
 }

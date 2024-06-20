@@ -30,7 +30,6 @@ projectsAPI
   })
   .then(() => {
     lazyImages = refs.projectsList.querySelectorAll('img[data-src]');
-    console.log('🚀 -> lazyImages:', lazyImages);
 
     lazyImages.forEach(image => {
       image.addEventListener('load', onLazyImageLoaded, { once: true });
@@ -65,7 +64,6 @@ function onLoadMore() {
     })
     .then(() => {
       lazyImages = refs.projectsList.querySelectorAll('img[data-src]');
-      console.log('🚀 -> lazyImages:', lazyImages);
 
       lazyImages.forEach(image => {
         image.addEventListener('load', onLazyImageLoaded, { once: true });
@@ -119,6 +117,5 @@ function onImageLoaded(evt) {
 }
 
 function onLazyImageLoaded(evt) {
-  console.log('Картинка загрузилась');
   evt.target.classList.add('appear');
 }

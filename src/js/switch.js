@@ -40,13 +40,11 @@ const faqMoreDownBtn = document.querySelectorAll('.faq-icon-down');
 const closeModalIcon = document.querySelector('.btn-close');
 
 const reviews = document.querySelectorAll('.swiper-slide');
-console.log('🚀 -> reviews:', reviews);
 
 let visitButtons = null;
 let swiperSlides = null;
 
 const applyTheme = (isDark, projectButtons = []) => {
-  console.log('Applying theme:', isDark ? 'dark' : 'light');
 
   visitButtons = document.querySelectorAll('.project-button');
   swiperSlides = document.querySelectorAll('.swiper-slide');
@@ -238,4 +236,3 @@ changeThemeMob.addEventListener('change', event => {
 //   applyTheme(isDark, projectButtons);
 // });
 
-// console.log(projectButtons);
